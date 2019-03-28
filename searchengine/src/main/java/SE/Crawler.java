@@ -81,6 +81,8 @@ public class Crawler {
             String currURL = s;
 
             //TODO put s into url->pageID mapping, or check if it exists already
+            //build forward index
+            //build inverted index
             
             while((s = br.readLine())!=null){
                 sb.append(s);

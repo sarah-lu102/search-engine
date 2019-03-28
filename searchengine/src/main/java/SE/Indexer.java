@@ -15,11 +15,12 @@ import org.rocksdb.RocksDBException;
 import org.rocksdb.RocksIterator;
 
 public class Indexer {
-    // define paths to
-    private final String uPath = "/urlToPageID";
-    private final String wPath = "/wordToWordID";
-    private final String fPath = "/forwardIndex";
-    private final String iPath = "/invertedIndex";
+    // define paths to DBs
+    private final String workingDirectory = System.getProperty("user.dir");
+    private final String uPath = workingDirectory + "/urlToPageID";
+    private final String wPath = workingDirectory + "/wordToWordID";
+    private final String fPath = workingDirectory + "/forwardIndex";
+    private final String iPath = workingDirectory + "/invertedIndex";
     private RocksDB urlToPageID;
     private RocksDB wordToWordID;
     private RocksDB forwardIndex;

@@ -1,2 +1,6 @@
 searchengine/src/main/java/test
 searchengine/target
+urlToPageID
+wordToWordID
+forwardIndex
+invertedIndex
