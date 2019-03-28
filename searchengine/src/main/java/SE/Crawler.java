@@ -78,6 +78,9 @@ public class Crawler {
             }         
             
             StringBuilder sb = new StringBuilder();
+            String currURL = s;
+
+            //TODO put s into url->pageID mapping, or check if it exists already
             
             while((s = br.readLine())!=null){
                 sb.append(s);
@@ -90,8 +93,8 @@ public class Crawler {
                 String w = matcher.group(); 
                 
                 if(!marked.contains(w)){
-                    if(marked.size()>=30)return;
-                    try { //check if the web page body text. if not, don't include.
+                    if(marked.size()>=30) return;
+                    try { //check if the web page body has text. if not, don't include.
                         Document document = Jsoup.connect(w).get();
                         body = document.body().text();
                     } catch (Exception e) {
@@ -99,6 +102,11 @@ public class Crawler {
                     }
                     if(body != null && !body.isEmpty()){
                         marked.add(w);
+                        /*
+                        /*TODO: url->PageID mapping
+                        * (call the indexing function)
+                        * add to currURL's children
+                        */
                         System.out.println("Site : "+w);
                     }
                     q.add(w);
