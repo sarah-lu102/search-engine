@@ -30,10 +30,10 @@ public class Indexer {
     public Indexer() throws RocksDBException {
         this.options = new Options();
         this.options.setCreateIfMissing(true);
-        RocksDB.open(options, uPath);
-        RocksDB.open(options, wPath);
-        RocksDB.open(options, fPath);
-        RocksDB.open(options, iPath);
+        urlToPageID = RocksDB.open(options, uPath);
+        wordToWordID = RocksDB.open(options, wPath);
+        forwardIndex = RocksDB.open(options, fPath);
+        invertedIndex = RocksDB.open(options, iPath);
     }
 
     public long getDate(String url) {

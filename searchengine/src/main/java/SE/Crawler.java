@@ -1,4 +1,5 @@
 package SE;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,7 +13,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.rocksdb.RocksDB;
+import org.jsoup.Jsoup;
 import org.jsoup.helper.HttpConnection;
+import org.jsoup.nodes.Document;
 import org.rocksdb.Options;
 import org.rocksdb.RocksDBException;
 import org.rocksdb.RocksIterator;
@@ -44,6 +47,7 @@ public class Crawler {
                 return;
 
             boolean ok = false;
+            String body = null;
             URL url = null;
             BufferedReader br = null;
 
@@ -69,6 +73,7 @@ public class Crawler {
                     marked.remove(s);
                     //Get next URL from queue
                     s = q.poll();
+                    ok = false;
                 }
             }         
             
@@ -86,8 +91,16 @@ public class Crawler {
                 
                 if(!marked.contains(w)){
                     if(marked.size()>=30)return;
-                    marked.add(w);
-                    System.out.println("Site : "+w);
+                    try { //check if the web page body text. if not, don't include.
+                        Document document = Jsoup.connect(w).get();
+                        body = document.body().text();
+                    } catch (Exception e) {
+                        body = null;
+                    }
+                    if(body != null && !body.isEmpty()){
+                        marked.add(w);
+                        System.out.println("Site : "+w);
+                    }
                     q.add(w);
                 }
             } 
