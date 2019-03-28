@@ -11,46 +11,64 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.rocksdb.RocksDB;
+import org.jsoup.helper.HttpConnection;
+import org.rocksdb.Options;
+import org.rocksdb.RocksDBException;
+import org.rocksdb.RocksIterator;
+
+import SE.Indexer;
+
 public class Crawler {
-    //Queue for BFS
+    private Options options;
+    private static Indexer indexer;
+    // Queue for BFS
     static Queue<String> q = new LinkedList<>();
-    
-    //URLs already visited
+
+    // URLs already visited
     static Set<String> marked = new HashSet<>();
-    
-   //URL Pattern regex
-   static String regex = "http[s]*://(\\w+\\.)*(\\w+)";
-   
-   //Start from here
-   static String root = "http://www.cse.ust.hk";
-    
-   //BFS Routine
-    public static void bfs() throws IOException{
+
+    // URL Pattern regex
+    static String regex = "http[s]*://(\\w+\\.)*(\\w+)";
+
+    // Start from here
+    static String root = "http://www.cse.ust.hk";
+
+    // BFS Routine
+    public static void bfs() throws IOException {
         q.add(root);
-        while(!q.isEmpty()){ 
+        while (!q.isEmpty()) {
             String s = q.poll();
-            
-            if(marked.size()>30)return;
-            
+
+            if (marked.size() > 30)
+                return;
+
             boolean ok = false;
             URL url = null;
             BufferedReader br = null;
-            
-            while(!ok){ 
-                try{
+
+            while (!ok) {
+                try {
                     url = new URL(s);
                     br = new BufferedReader(new InputStreamReader(url.openStream()));
                     ok = true;
                 }catch(MalformedURLException e){
                     System.out.println("\nMalformedURL : "+s+"\n");
+                    marked.remove(s);
                     //Get next URL from queue
                     s = q.poll();
                     ok = false;
                 }catch(IOException e){
                     System.out.println("\nIOException for URL : "+s+"\n");
+                    marked.remove(s);
                     //Get next URL from queue
                     s = q.poll();
                     ok = false;
+                }catch(Exception e){
+                    System.out.println("\nException for URL : "+s+"\n");
+                    marked.remove(s);
+                    //Get next URL from queue
+                    s = q.poll();
                 }
             }         
             
@@ -81,15 +99,27 @@ public class Crawler {
         System.out.println("\n\nResults: ");
         System.out.println("\nWeb sites crawled : "+marked.size()+"\n");
         for(String s:marked){
-            System.out.println(s);
+            System.out.println(s + " -- date: " + indexer.getDate(s) + " -- title: " + indexer.getTitle(s));
+            System.out.println ("page size: " + indexer.getPageSize(s));
+            System.out.println(indexer.getBody(s) + "\n");
         }
     }
     
     //Run
     public static void main(String[] args){
+        // a static method that loads the RocksDB C++ library.
+        RocksDB.loadLibrary();
+        
+        try {
+            indexer = new Indexer();
+        } catch (RocksDBException e) {
+               System.out.println(e.getStackTrace());
+        }
+
         try{
             bfs();
-            displayResults(); 
+            displayResults();
+
         }catch(IOException e){
             System.out.println("IOException caught : "+e);
         }
