@@ -43,11 +43,11 @@ public class Indexer {
         invertedIndex = RocksDB.open(options, iPath);
     }
 
-    public static boolean validURL(String url){
-        //TODO
-        return true;
+    public static Boolean validURL(String url){
+        String s = getBody(url);
+        if(s != null && !s.isEmpty()) return true;
+        return false;
     }
-
 
     public static ArrayList<String> extractWords(String url) throws ParserException
     {

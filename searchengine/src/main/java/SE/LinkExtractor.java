@@ -1,6 +1,7 @@
 // HTMLParser Library $Name: v1_6 $ - A java-based parser for HTML
 // http://sourceforge.org/projects/htmlparser
 // Copyright (C) 2012 Pengfei Zhao
+package SE;
 import java.net.URL;
 import java.util.Vector;
 import org.htmlparser.beans.LinkBean;
