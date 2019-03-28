@@ -75,9 +75,9 @@ public class Indexer {
         for (URL s : urls) {
             String curr = s.toString();
             while(curr.charAt(curr.length()-1)=='#' || curr.charAt(curr.length()-1)=='/'){
-                curr = curr.substring(0, curr.length() - 2);
+                curr = curr.substring(0, curr.length() - 1);
             }
-            result.add(s.toString());
+            result.add(curr);
         }
         return result;
 
