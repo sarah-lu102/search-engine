@@ -39,7 +39,7 @@ public class Crawler {
     static String root = "http://www.cse.ust.hk";
 
     // BFS Routine
-    public static void bfs() throws IOException {
+    public static void bfs() throws IOException, RocksDBException {
         Queue<String> urlQ = new LinkedList<>();
         urlQ.add(root);
         marked.add(root);
@@ -80,7 +80,7 @@ public class Crawler {
     }
     
     //Run
-    public static void main(String[] args){
+    public static void main(String[] args) throws RocksDBException{
         // a static method that loads the RocksDB C++ library.
         RocksDB.loadLibrary();
         
@@ -92,7 +92,8 @@ public class Crawler {
 
         try{
             bfs();
-            displayResults();
+            //displayResults();
+            indexer.printAll();
 
         }catch(IOException e){
             System.out.println("IOException caught : "+e);

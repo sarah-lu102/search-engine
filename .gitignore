@@ -1,6 +1,7 @@
 searchengine/src/main/java/test
 searchengine/target
 urlToPageID
+pageIDToUrl
 wordToWordID
 forwardIndex
 invertedIndex

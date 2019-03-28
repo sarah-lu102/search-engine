@@ -24,21 +24,28 @@ public class Indexer {
     // define paths to DBs
     private final String workingDirectory = System.getProperty("user.dir");
     private final String uPath = workingDirectory + "/urlToPageID";
+    private final String uInversePath = workingDirectory + "/PageIDToUrl";
     private final String wPath = workingDirectory + "/wordToWordID";
+    
     private final String fPath = workingDirectory + "/forwardIndex";
     private final String iPath = workingDirectory + "/invertedIndex";
-    private RocksDB urlToPageID;
-    private RocksDB wordToWordID;
+    //private RocksDB urlToPageID;
+    private MappingIndex urlToPageID;
+    private MappingIndex wordToWordID;
     private RocksDB forwardIndex;
     private RocksDB invertedIndex;
 
     private Options options;
 
+    //private int pageIDs = 0;
+
     public Indexer() throws RocksDBException {
         this.options = new Options();
         this.options.setCreateIfMissing(true);
-        urlToPageID = RocksDB.open(options, uPath);
-        wordToWordID = RocksDB.open(options, wPath);
+       // urlToPageID = RocksDB.open(options, uPath);
+        urlToPageID = new MappingIndex(uPath, uInversePath);
+        //wordToWordID = new MappingIndex(wPath);
+        //wordToWordID = RocksDB.open(options, wPath);
         forwardIndex = RocksDB.open(options, fPath);
         invertedIndex = RocksDB.open(options, iPath);
     }
@@ -125,7 +132,22 @@ public class Indexer {
         return null;        
     }
 
-    public void index(String url){
+    public void index(String url) throws RocksDBException {
+        // byte[] content = urlToPageID.get(url.getBytes());
+        // if (content == null) {
+        //     content = ("doc 1").getBytes();
+        // } else {
+        //     content = (new String(content) + " doc 1").getBytes();
+        //     //content = ("doc 1").getBytes();
+        // }
+        // urlToPageID.put(url.getBytes(), content);
+        //int pageID = urlToPageID.getSize();
+        //System.out.println(pageID);
+        int pageID = urlToPageID.getSize();
+        if(urlToPageID.addEntry(url, pageID)){ //if new then need to store rest of infomation
+            //pageIDs++;
+        }
+        
         /*
         * TODO:
         * check if page has already been indexed
@@ -138,4 +160,19 @@ public class Indexer {
         * function: create/update inverted index in RocksDB
         */
     }
+
+    public void printAll() throws RocksDBException
+    {
+        // Print all the data in the hashtable
+        // ADD YOUR CODES HERE
+        urlToPageID.printAll();
+        System.out.println("Getting ID");
+        System.out.println(urlToPageID.getID("http://www.cse.ust.hk"));
+        System.out.println("Getting Page From ID");
+System.out.println(urlToPageID.getURL(2));
+    urlToPageID.delEntry("http://www.cse.ust.hk");
+     System.out.println(urlToPageID.getID("http://www.cse.ust.hk"));
+      System.out.println(urlToPageID.getURL(0));
+        //System.out.println("Getting page");
+    }    
 }
