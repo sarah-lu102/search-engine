@@ -9,6 +9,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -29,94 +30,41 @@ public class Crawler {
     private Options options;
     private static Indexer indexer;
     // Queue for BFS
-    static Queue<String> q = new LinkedList<>();
-
     // URLs already visited
     static Set<String> marked = new HashSet<>();
 
     // URL Pattern regex
-    static String regex = "http[s]*://(\\w+\\.)*(\\w+)";
 
     // Start from here
     static String root = "http://www.cse.ust.hk";
 
     // BFS Routine
     public static void bfs() throws IOException {
-        q.add(root);
-        while (!q.isEmpty()) {
-            String s = q.poll();
+        Queue<String> urlQ = new LinkedList<>();
+        urlQ.add(root);
+        marked.add(root);
+        int count = 1;
 
-            if (marked.size() > 30)
-                return;
+        while(!urlQ.isEmpty())
+        {
+            String currentURL = urlQ.poll();
+            System.out.println("Site expanded: "+ currentURL);
 
-            boolean ok = false;
-            String body = null;
-            URL url = null;
-            BufferedReader br = null;
+            try {
+                ArrayList<String> children = Indexer.extractLinks(currentURL);
 
-            while (!ok) {
-                try {
-                    url = new URL(s);
-                    br = new BufferedReader(new InputStreamReader(url.openStream()));
-                    ok = true;
-                }catch(MalformedURLException e){
-                    System.out.println("\nMalformedURL : "+s+"\n");
-                    marked.remove(s);
-                    //Get next URL from queue
-                    s = q.poll();
-                    ok = false;
-                }catch(IOException e){
-                    System.out.println("\nIOException for URL : "+s+"\n");
-                    marked.remove(s);
-                    //Get next URL from queue
-                    s = q.poll();
-                    ok = false;
-                }catch(Exception e){
-                    System.out.println("\nException for URL : "+s+"\n");
-                    marked.remove(s);
-                    //Get next URL from queue
-                    s = q.poll();
-                    ok = false;
+                for (String child : children) {
+                    if (count < 30 && indexer.validURL(currentURL) && !marked.contains(child)) {
+                        count++;
+                        urlQ.add(child);
+                        marked.add(child);
+                    }
                 }
-            }         
-            
-            StringBuilder sb = new StringBuilder();
-            String currURL = s;
-
-            //TODO put s into url->pageID mapping, or check if it exists already
-            //build forward index
-            //build inverted index
-            
-            while((s = br.readLine())!=null){
-                sb.append(s);
+            }catch(ParserException e){
+                System.out.println("Parser exception: "+e);
             }
-            s = sb.toString();
-            Pattern pattern = Pattern.compile(regex);
-            Matcher matcher = pattern.matcher(s);
-            
-            while(matcher.find()){
-                String w = matcher.group(); 
-                
-                if(!marked.contains(w)){
-                    if(marked.size()>=30) return;
-                    try { //check if the web page body has text. if not, don't include.
-                        Document document = Jsoup.connect(w).get();
-                        body = document.body().text();
-                    } catch (Exception e) {
-                        body = null;
-                    }
-                    if(body != null && !body.isEmpty()){
-                        marked.add(w);
-                        /*
-                        /*TODO: url->PageID mapping
-                        * (call the indexing function)
-                        * add to currURL's children
-                        */
-                        System.out.println("Site : "+w);
-                    }
-                    q.add(w);
-                }
-            } 
+
+            indexer.index(currentURL);
         }
     }
     

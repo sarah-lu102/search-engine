@@ -8,6 +8,12 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Date;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+import org.htmlparser.beans.LinkBean;
+import org.htmlparser.beans.StringBean;
+import org.htmlparser.util.ParserException;
 
 import org.rocksdb.RocksDB;
 import org.rocksdb.Options;
@@ -37,7 +43,47 @@ public class Indexer {
         invertedIndex = RocksDB.open(options, iPath);
     }
 
-    public long getDate(String url) {
+    public static boolean validURL(String url){
+        //TODO
+        return true;
+    }
+
+
+    public static ArrayList<String> extractWords(String url) throws ParserException
+    {
+        ArrayList<String> result = new ArrayList<String>();
+        StringBean bean = new StringBean();
+        bean.setURL(url);
+        bean.setLinks(false);
+        String contents = bean.getStrings();
+        StringTokenizer st = new StringTokenizer(contents);
+        while (st.hasMoreTokens()) {
+            result.add(st.nextToken());
+        }
+
+        return result;
+
+    }
+
+    public static ArrayList<String> extractLinks(String url) throws ParserException
+
+    {
+        ArrayList<String> result = new ArrayList<String>();
+        LinkBean bean = new LinkBean();
+        bean.setURL(url);
+        URL[] urls = bean.getLinks();
+        for (URL s : urls) {
+            String curr = s.toString();
+            while(curr.charAt(curr.length()-1)=='#' || curr.charAt(curr.length()-1)=='/'){
+                curr = curr.substring(0, curr.length() - 2);
+            }
+            result.add(s.toString());
+        }
+        return result;
+
+    }
+
+    public static long getDate(String url) {
         try {
             URL u = new URL(url);
             HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
@@ -48,7 +94,7 @@ public class Indexer {
         return -1;
     }
 
-    public long getPageSize(String url) {
+    public static long getPageSize(String url) {
         try {
             URL u = new URL(url);
             HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
@@ -59,7 +105,7 @@ public class Indexer {
         return -1;
     }
 
-    public String getTitle(String url) {
+    public static String getTitle(String url) {
         try {
             Document document = Jsoup.connect(url).get();
             return document.title();
@@ -69,7 +115,7 @@ public class Indexer {
         return "[untitled]";
     }
 
-    public String getBody(String url){
+    public static String getBody(String url){
         try {
             Document document = Jsoup.connect(url).get();
             return document.body().text();
