@@ -93,7 +93,7 @@ public class Crawler {
         try{
             bfs();
             //displayResults();
-           // indexer.printAll();
+            indexer.printAll();
 
         }catch(IOException e){
             System.out.println("IOException caught : "+e);

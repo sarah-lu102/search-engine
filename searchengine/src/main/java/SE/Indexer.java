@@ -82,18 +82,19 @@ public class Indexer {
     public static ArrayList<String> extractLinks(String url) throws ParserException
 
     {
-        ArrayList<String> result = new ArrayList<String>();
-        LinkBean bean = new LinkBean();
-        bean.setURL(url);
-        URL[] urls = bean.getLinks();
-        for (URL s : urls) {
-            String curr = s.toString();
-            while(curr.charAt(curr.length()-1)=='#' || curr.charAt(curr.length()-1)=='/'){
-                curr = curr.substring(0, curr.length() - 1);
+    
+            ArrayList<String> result = new ArrayList<String>();
+            LinkBean bean = new LinkBean();
+            bean.setURL(url);
+            URL[] urls = bean.getLinks();
+            for (URL s : urls) {
+                String curr = s.toString();
+                while(curr.charAt(curr.length()-1)=='#' || curr.charAt(curr.length()-1)=='/'){
+                    curr = curr.substring(0, curr.length() - 1);
+                }
+                result.add(curr);
             }
-            result.add(curr);
-        }
-        return result;
+            return result;
 
     }
 
@@ -203,17 +204,19 @@ public class Indexer {
         //System.out.println(pageID);
 
        
-
-        int pageID = url.hashCode();
-        //int pageID = urlToPageID.getSize();
-        
-        if(urlToPageID.addEntry(url, pageID)){ //if new then need to store rest of infomation
-            //pageIDs++;
-            Page new_page;
-            new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url));
-            forwardIndex.addEntry(pageID, new_page);
-        } //if false then need to check date
-        
+        try{
+            int pageID = url.hashCode();
+            //int pageID = urlToPageID.getSize();
+            
+            if(urlToPageID.addEntry(url, pageID)){ //if new then need to store rest of infomation
+                //pageIDs++;
+                Page new_page;
+                new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url));
+                forwardIndex.addEntry(pageID, new_page);
+            } //if false then need to check date
+        } catch (Exception e){
+            System.out.println("Exception Caught");
+        }
         /*
         * TODO:
         * check if page has already been indexed
@@ -238,10 +241,14 @@ public class Indexer {
 System.out.println(urlToPageID.getURL(2));
 
 System.out.println("Getting page info from id 0");
-System.out.println(forwardIndex.getPageContent(1).getTitle());
-System.out.println(forwardIndex.getPageContent(1).getModifiedDate());
-System.out.println(forwardIndex.getPageContent(1).getPageSize());
-System.out.println(forwardIndex.getPageContent(1).getURL());
+int testID=urlToPageID.getID("http://www.cse.ust.hk");
+System.out.println(forwardIndex.getPageContent(testID).getTitle());
+System.out.println(forwardIndex.getPageContent(testID).getModifiedDate());
+System.out.println(forwardIndex.getPageContent(testID).getPageSize());
+System.out.println(forwardIndex.getPageContent(testID).getURL());
+ArrayList<String> children = forwardIndex.getPageContent(testID).getChildLinks();
+for(String child : children)
+    System.out.println(child);
     //urlToPageID.delEntry("http://www.cse.ust.hk");
      //System.out.println(urlToPageID.getID("http://www.cse.ust.hk"));
       //System.out.println(urlToPageID.getURL(0));

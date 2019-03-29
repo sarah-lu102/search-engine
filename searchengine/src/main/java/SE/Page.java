@@ -3,6 +3,7 @@ package SE;
 
 import java.util.Date;
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Page implements Serializable
 {
@@ -10,13 +11,15 @@ public class Page implements Serializable
 	String url;
 	String lastModifiedDate;
 	int size;
+	ArrayList<String> childLinks;
 	
-	public Page(String title, String url, String lastModifiedDate, int size)
+	public Page(String title, String url, String lastModifiedDate, int size, ArrayList<String> childLinks)
 	{
 		this.title = title;
 		this.url = url;
 		this.lastModifiedDate = lastModifiedDate;
 		this.size = size;
+		this.childLinks = childLinks;
 	}
 
 	public String getModifiedDate(){
@@ -41,6 +44,10 @@ public class Page implements Serializable
 	
 	public void setTitle(String _title) {
 		title = _title;
+	}
+
+	public ArrayList<String> getChildLinks(){
+		return childLinks;
 	}
 }
 /*Page class only contain simple imformation of a page,
