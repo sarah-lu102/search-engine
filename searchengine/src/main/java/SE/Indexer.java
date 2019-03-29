@@ -32,13 +32,13 @@ public class Indexer {
     private final String uInversePath = workingDirectory + "/pageIDToUrl";
     private final String wPath = workingDirectory + "/wordToWordID";
     
-    private final String fPath = workingDirectory + "/forwardIndex";
+    private final String fPath = workingDirectory + "/pageInfo";
     private final String iPath = workingDirectory + "/invertedIndex";
     //private RocksDB urlToPageID;
     private MappingIndex urlToPageID;
     private MappingIndex wordToWordID;
     //private RocksDB forwardIndex;
-     private PageContent forwardIndex;
+     private PageContent pageInfo;
     private RocksDB invertedIndex;
 
     private Options options;
@@ -53,7 +53,7 @@ public class Indexer {
         //wordToWordID = new MappingIndex(wPath);
         //wordToWordID = RocksDB.open(options, wPath);
         //forwardIndex = RocksDB.open(options, fPath);
-        forwardIndex = new PageContent(fPath);
+        pageInfo = new PageContent(fPath);
         invertedIndex = RocksDB.open(options, iPath);
     }
 
@@ -212,7 +212,7 @@ public class Indexer {
                 //pageIDs++;
                 Page new_page;
                 new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url));
-                forwardIndex.addEntry(pageID, new_page);
+                pageInfo.addEntry(pageID, new_page);
             } //if false then need to check date
         } catch (Exception e){
             System.out.println("Exception Caught");
@@ -242,11 +242,11 @@ System.out.println(urlToPageID.getURL(2));
 
 System.out.println("Getting page info from id 0");
 int testID=urlToPageID.getID("http://www.cse.ust.hk");
-System.out.println(forwardIndex.getPageContent(testID).getTitle());
-System.out.println(forwardIndex.getPageContent(testID).getModifiedDate());
-System.out.println(forwardIndex.getPageContent(testID).getPageSize());
-System.out.println(forwardIndex.getPageContent(testID).getURL());
-ArrayList<String> children = forwardIndex.getPageContent(testID).getChildLinks();
+System.out.println(pageInfo.getPageContent(testID).getTitle());
+System.out.println(pageInfo.getPageContent(testID).getModifiedDate());
+System.out.println(pageInfo.getPageContent(testID).getPageSize());
+System.out.println(pageInfo.getPageContent(testID).getURL());
+ArrayList<String> children = pageInfo.getPageContent(testID).getChildLinks();
 for(String child : children)
     System.out.println(child);
     //urlToPageID.delEntry("http://www.cse.ust.hk");

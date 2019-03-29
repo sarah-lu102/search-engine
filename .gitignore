@@ -3,5 +3,5 @@ searchengine/target
 urlToPageID
 pageIDToUrl
 wordToWordID
-forwardIndex
+pageInfo
 invertedIndex
