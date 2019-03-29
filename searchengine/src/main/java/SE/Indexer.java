@@ -213,7 +213,21 @@ public class Indexer {
                 Page new_page;
                 new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url));
                 pageInfo.addEntry(pageID, new_page);
-            } //if false then need to check date
+            } else { //if false then need to check date
+                Page curr_page = pageInfo.getPageContent(pageID);
+                
+                SimpleDateFormat f = new SimpleDateFormat("EEEE, MMMM d, yyyy");
+                Date d1 = f.parse(curr_page.getModifiedDate());
+                Date d2 = f.parse(getDate(url));
+                  
+                if(d1.compareTo(d2) < 0) {//if old date is before new date update
+                    System.out.println("Updating Page");
+                    pageInfo.delEntry(pageID);
+                    Page new_page;
+                    new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url));
+                    pageInfo.addEntry(pageID, new_page);
+                }
+            }
         } catch (Exception e){
             System.out.println("Exception Caught");
         }

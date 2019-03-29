@@ -63,11 +63,11 @@ public class PageContent
         //}
         db.put(Integer.toString(pageID).getBytes(), content);
     }
-    public void delEntry(String word) throws RocksDBException
+    public void delEntry(int pageID) throws RocksDBException
     {
         // Delete the word and its list from the hashtable
         // ADD YOUR CODES HERE
-        db.remove(word.getBytes());
+        db.remove(Integer.toString(pageID).getBytes());
     } 
 
     public Page getPageContent(int pageID) throws RocksDBException {
