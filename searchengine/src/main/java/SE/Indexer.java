@@ -1,5 +1,6 @@
 package SE;
 import java.util.Vector;
+import lib.StopStem;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -25,6 +26,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 
+import org.apache.commons.lang3.*;
+
+
 public class Indexer {
     // define paths to DBs
     private final String workingDirectory = System.getProperty("user.dir");
@@ -32,14 +36,18 @@ public class Indexer {
     private final String uInversePath = workingDirectory + "/pageIDToUrl";
     private final String wPath = workingDirectory + "/wordToWordID";
     
-    private final String fPath = workingDirectory + "/pageInfo";
+    private final String pPath = workingDirectory + "/pageInfo";
     private final String iPath = workingDirectory + "/invertedIndex";
+    private final String fPath = workingDirectory + "/forwardIndex";
+
     //private RocksDB urlToPageID;
     private MappingIndex urlToPageID;
     private MappingIndex wordToWordID;
     //private RocksDB forwardIndex;
      private PageContent pageInfo;
     private RocksDB invertedIndex;
+    private RocksDB forwardIndex;
+
 
     private Options options;
 
@@ -53,8 +61,10 @@ public class Indexer {
         //wordToWordID = new MappingIndex(wPath);
         //wordToWordID = RocksDB.open(options, wPath);
         //forwardIndex = RocksDB.open(options, fPath);
-        pageInfo = new PageContent(fPath);
+        pageInfo = new PageContent(pPath);
         invertedIndex = RocksDB.open(options, iPath);
+        forwardIndex = RocksDB.open(options, fPath);
+
     }
 
     public static Boolean validURL(String url){
@@ -63,21 +73,41 @@ public class Indexer {
         return false;
     }
 
-    public static ArrayList<String> extractWords(String url) throws ParserException
+    public static HashMap<Integer, ArrayList<Integer>> extractWordIDs(String url) throws ParserException
     {
-        ArrayList<String> result = new ArrayList<String>();
+        StopStem stopStem = new StopStem("stopwords.txt");
+        HashMap<Integer, ArrayList<Integer>> words = new HashMap<>();
         StringBean bean = new StringBean();
         bean.setURL(url);
         bean.setLinks(false);
+        int index = 0;
         String contents = bean.getStrings();
         StringTokenizer st = new StringTokenizer(contents);
         while (st.hasMoreTokens()) {
-            result.add(st.nextToken());
+            String nextWord = st.nextToken();
+            if(stopStem.isStopWord(nextWord)){
+                System.out.println("Stop word skipped: "+nextWord);
+                continue;
+            }
+            else{
+                nextWord = stopStem.stem(nextWord);
+                System.out.println("Stemmed word added: "+ nextWord);
+            }
+
+            Integer next = nextWord.hashCode();
+            ArrayList<Integer> indexList = new ArrayList<>();
+            if(words.containsKey(next)){
+                indexList = words.get(next);
+            }
+
+            indexList.add(index++);
+            words.put(next, indexList);
         }
 
-        return result;
+        return words;
 
     }
+
 
     public static ArrayList<String> extractLinks(String url) throws ParserException
 
@@ -231,6 +261,8 @@ public class Indexer {
         } catch (Exception e){
             System.out.println("Exception Caught");
         }
+
+        indexWords(url);
         /*
         * TODO:
         * check if page has already been indexed
@@ -242,6 +274,60 @@ public class Indexer {
         * function: create/update forward index in RocksDB
         * function: create/update inverted index in RocksDB
         */
+    }
+
+    public void indexWords(String url){
+        int pageID = url.hashCode();
+
+
+        try{
+            HashMap<Integer, ArrayList<Integer>> words = extractWordIDs(url);
+            forwardIndex.put(SerializationUtils.serialize(pageID), SerializationUtils.serialize(words));
+
+            for(Map.Entry<Integer, ArrayList<Integer>> pair : words.entrySet()) {
+                int id = pair.getKey();
+
+                byte[] invertedEntryBytes = invertedIndex.get(SerializationUtils.serialize(id));
+                HashSet<Integer> invertedEntry = new HashSet<Integer>();
+                if(invertedEntryBytes!=null){
+                    invertedEntry = (HashSet<Integer>)SerializationUtils.deserialize(invertedEntryBytes);
+                }
+
+                if (!invertedEntry.contains(pageID)) {
+                    invertedEntry.add(pageID);
+                }
+
+                invertedIndex.put(SerializationUtils.serialize(id), SerializationUtils.serialize(invertedEntry));
+
+            }
+
+
+
+
+        }catch(ParserException e){
+            System.out.print("Parsing exception while indexing: "+url+" Error: "+e);
+        }catch(RocksDBException e){
+            System.out.print("RocksDBException while indexing: "+url+" Error: "+e);
+        }
+
+    }
+
+    public static void main(String[] args) throws RocksDBException{ //FOR TESTING ALREADY CREATED DBs.
+        Indexer self = new Indexer();
+        String url = "http://www.cse.ust.hk";
+        //self.index(url);
+
+        byte[] in = self.forwardIndex.get(SerializationUtils.serialize(url.hashCode()));
+        byte[] in2 = self.invertedIndex.get(SerializationUtils.serialize("Hong".hashCode()));
+        if(in == null){
+            System.out.println("NULL!!!!");
+        }
+        else {
+            HashMap<Integer, ArrayList<Integer>> forward = (HashMap<Integer, ArrayList<Integer>>)SerializationUtils.deserialize(in);
+            HashSet<Integer> inverted = (HashSet<Integer>)SerializationUtils.deserialize(in2);
+            System.out.println(forward.get("Hong".hashCode()).get(0));
+            System.out.println("Does hong's ii contain root url? "+inverted.contains(url.hashCode()));
+        }
     }
 
     public void printAll() throws RocksDBException
