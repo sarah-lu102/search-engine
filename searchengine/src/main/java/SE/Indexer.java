@@ -34,7 +34,7 @@ public class Indexer {
     private final String workingDirectory = System.getProperty("user.dir");
     private final String uPath = workingDirectory + "/urlToPageID";
     private final String uInversePath = workingDirectory + "/pageIDToUrl";
-    private final String wPath = workingDirectory + "/wordToWordID";
+    private final String wPath = workingDirectory + "/wordIDToWord";
     
     private final String pPath = workingDirectory + "/pageInfo";
     private final String iPath = workingDirectory + "/invertedIndex";
@@ -42,7 +42,7 @@ public class Indexer {
 
     //private RocksDB urlToPageID;
     private MappingIndex urlToPageID;
-    private MappingIndex wordToWordID;
+    private RocksDB wordIDToWord;
     //private RocksDB forwardIndex;
      private PageContent pageInfo;
     private RocksDB invertedIndex;
@@ -58,12 +58,12 @@ public class Indexer {
         this.options.setCreateIfMissing(true);
        // urlToPageID = RocksDB.open(options, uPath);
         urlToPageID = new MappingIndex(uPath, uInversePath);
-        //wordToWordID = new MappingIndex(wPath);
         //wordToWordID = RocksDB.open(options, wPath);
         //forwardIndex = RocksDB.open(options, fPath);
         pageInfo = new PageContent(pPath);
         invertedIndex = RocksDB.open(options, iPath);
         forwardIndex = RocksDB.open(options, fPath);
+        wordIDToWord = RocksDB.open(options, wPath);
 
     }
 
@@ -73,7 +73,7 @@ public class Indexer {
         return false;
     }
 
-    public static HashMap<Integer, ArrayList<Integer>> extractWordIDs(String url) throws ParserException
+    public  HashMap<Integer, ArrayList<Integer>> extractWordIDs(String url) throws ParserException
     {
         StopStem stopStem = new StopStem("stopwords.txt");
         HashMap<Integer, ArrayList<Integer>> words = new HashMap<>();
@@ -86,7 +86,7 @@ public class Indexer {
         while (st.hasMoreTokens()) {
             String nextWord = st.nextToken();
             if(stopStem.isStopWord(nextWord)){
-                System.out.println("Stop word skipped: "+nextWord);
+                //System.out.println("Stop word skipped: "+nextWord);
                 continue;
             }
             else{
@@ -94,7 +94,16 @@ public class Indexer {
                 if(nextWord.length()==0){
                     continue;
                 }
-                System.out.println("Stemmed word added: "+ nextWord);
+
+                try{
+                    if(wordIDToWord.get(SerializationUtils.serialize(nextWord.hashCode()))==null){ //Check for collision here?
+                        wordIDToWord.put(SerializationUtils.serialize(nextWord.hashCode()), nextWord.getBytes());
+                    }
+                }catch (RocksDBException e){
+                    System.out.println(e);
+                }
+
+                //System.out.println("Stemmed word added: "+ nextWord);
             }
 
             Integer next = nextWord.hashCode();
