@@ -19,12 +19,16 @@ import org.rocksdb.RocksDB;
 import org.rocksdb.Options;
 import org.rocksdb.RocksDBException;
 import org.rocksdb.RocksIterator;
+import java.util.*;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Indexer {
     // define paths to DBs
     private final String workingDirectory = System.getProperty("user.dir");
     private final String uPath = workingDirectory + "/urlToPageID";
-    private final String uInversePath = workingDirectory + "/PageIDToUrl";
+    private final String uInversePath = workingDirectory + "/pageIDToUrl";
     private final String wPath = workingDirectory + "/wordToWordID";
     
     private final String fPath = workingDirectory + "/forwardIndex";
@@ -32,7 +36,8 @@ public class Indexer {
     //private RocksDB urlToPageID;
     private MappingIndex urlToPageID;
     private MappingIndex wordToWordID;
-    private RocksDB forwardIndex;
+    //private RocksDB forwardIndex;
+     private PageContent forwardIndex;
     private RocksDB invertedIndex;
 
     private Options options;
@@ -46,7 +51,8 @@ public class Indexer {
         urlToPageID = new MappingIndex(uPath, uInversePath);
         //wordToWordID = new MappingIndex(wPath);
         //wordToWordID = RocksDB.open(options, wPath);
-        forwardIndex = RocksDB.open(options, fPath);
+        //forwardIndex = RocksDB.open(options, fPath);
+        forwardIndex = new PageContent(fPath);
         invertedIndex = RocksDB.open(options, iPath);
     }
 
@@ -90,22 +96,56 @@ public class Indexer {
 
     }
 
-    public static long getDate(String url) {
+    //     public static long getDate(String url) {
+    //     try {
+    //         URL u = new URL(url);
+    //         HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
+            
+            
+    //         return httpCon.getLastModified();
+    //     } catch (Exception e) {
+    //         System.out.println(e.getStackTrace());
+    //     }
+    //     return -1;
+    // }
+
+    public static Date getDate(String url) {
         try {
             URL u = new URL(url);
             HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
-            return httpCon.getLastModified();
+
+            Date date = new Date(httpCon.getLastModified());
+            return date;
         } catch (Exception e) {
             System.out.println(e.getStackTrace());
         }
-        return -1;
+        return Calendar.getInstance().getTime();
     }
 
-    public static long getPageSize(String url) {
+    // public static long getPageSize(String url) {
+    //     try {
+    //         URL u = new URL(url);
+    //         HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
+    //         return httpCon.getContentLength();
+    //     } catch (Exception e) {
+    //         System.out.println(e.getStackTrace());
+    //     }
+    //     return -1;
+    // }
+
+    public static int getPageSize(String url) {
         try {
             URL u = new URL(url);
             HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
-            return httpCon.getContentLength();
+            BufferedReader b = new BufferedReader(new InputStreamReader(httpCon.getInputStream()));
+
+            String input = "";
+            String temp = "";
+            while((input = b.readLine())!=null) 
+                temp += input;
+
+            b.close();
+            return temp.length();
         } catch (Exception e) {
             System.out.println(e.getStackTrace());
         }
@@ -143,10 +183,18 @@ public class Indexer {
         // urlToPageID.put(url.getBytes(), content);
         //int pageID = urlToPageID.getSize();
         //System.out.println(pageID);
+
+       
+
+
         int pageID = urlToPageID.getSize();
+        
         if(urlToPageID.addEntry(url, pageID)){ //if new then need to store rest of infomation
             //pageIDs++;
-        }
+            Page new_page;
+            new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url));
+            forwardIndex.addEntry(pageID, new_page);
+        } //if false then need to check date
         
         /*
         * TODO:
@@ -170,9 +218,15 @@ public class Indexer {
         System.out.println(urlToPageID.getID("http://www.cse.ust.hk"));
         System.out.println("Getting Page From ID");
 System.out.println(urlToPageID.getURL(2));
-    urlToPageID.delEntry("http://www.cse.ust.hk");
-     System.out.println(urlToPageID.getID("http://www.cse.ust.hk"));
-      System.out.println(urlToPageID.getURL(0));
+
+System.out.println("Getting page info from id 0");
+System.out.println(forwardIndex.getPageContent(1).getTitle());
+System.out.println(forwardIndex.getPageContent(1).getModifiedDate());
+System.out.println(forwardIndex.getPageContent(1).getPageSize());
+System.out.println(forwardIndex.getPageContent(1).getURL());
+    //urlToPageID.delEntry("http://www.cse.ust.hk");
+     //System.out.println(urlToPageID.getID("http://www.cse.ust.hk"));
+      //System.out.println(urlToPageID.getURL(0));
         //System.out.println("Getting page");
     }    
 }

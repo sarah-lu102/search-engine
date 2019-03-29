@@ -92,7 +92,7 @@ public class Crawler {
 
         try{
             bfs();
-            //displayResults();
+          //  displayResults();
             indexer.printAll();
 
         }catch(IOException e){
