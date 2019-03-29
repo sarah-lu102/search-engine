@@ -8,10 +8,10 @@ public class Page implements Serializable
 {
 	String title;
 	String url;
-	Date lastModifiedDate;
+	String lastModifiedDate;
 	int size;
 	
-	public Page(String title, String url, Date lastModifiedDate, int size)
+	public Page(String title, String url, String lastModifiedDate, int size)
 	{
 		this.title = title;
 		this.url = url;
@@ -19,11 +19,11 @@ public class Page implements Serializable
 		this.size = size;
 	}
 
-	public Date getModifiedDate(){
+	public String getModifiedDate(){
 		return lastModifiedDate;
 	}
 
-	public void setModifiedDate(Date date){
+	public void setModifiedDate(String date){
 		this.lastModifiedDate = date;
 	}
 	

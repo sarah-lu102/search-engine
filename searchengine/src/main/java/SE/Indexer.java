@@ -23,6 +23,7 @@ import java.util.*;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
 
 public class Indexer {
     // define paths to DBs
@@ -109,18 +110,35 @@ public class Indexer {
     //     return -1;
     // }
 
-    public static Date getDate(String url) {
+    public static String getDate(String url) {
         try {
             URL u = new URL(url);
-            HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
-
-            Date date = new Date(httpCon.getLastModified());
-            return date;
-        } catch (Exception e) {
-            System.out.println(e.getStackTrace());
+            //URLConnection connection = place.openConnection();
+            HttpURLConnection connection = (HttpURLConnection) u.openConnection();
+            long date = connection.getLastModified();
+            SimpleDateFormat dateFormatter = new SimpleDateFormat("EEEE, MMMM d, yyyy");
+            if(date == 0) {
+                date = connection.getDate();
+            }
+            return dateFormatter.format(new Date(date));
+        }catch (Exception e) {
+            return null;
         }
-        return Calendar.getInstance().getTime();
     }
+
+    // public static Date getDate(String url) {
+    //     try {
+    //         URL u = new URL(url);
+    //         HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
+    //         System.out.println(httpCon.getLastModified());
+    //         Date date = new Date(httpCon.getLastModified());
+            
+    //         return date;
+    //     } catch (Exception e) {
+    //         System.out.println(e.getStackTrace());
+    //     }
+    //     return Calendar.getInstance().getTime();
+    // }
 
     // public static long getPageSize(String url) {
     //     try {
@@ -186,8 +204,8 @@ public class Indexer {
 
        
 
-
-        int pageID = urlToPageID.getSize();
+        int pageID = url.hashCode();
+        //int pageID = urlToPageID.getSize();
         
         if(urlToPageID.addEntry(url, pageID)){ //if new then need to store rest of infomation
             //pageIDs++;
