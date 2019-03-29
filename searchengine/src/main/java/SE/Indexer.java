@@ -91,6 +91,9 @@ public class Indexer {
             }
             else{
                 nextWord = stopStem.stem(nextWord);
+                if(nextWord.length()==0){
+                    continue;
+                }
                 System.out.println("Stemmed word added: "+ nextWord);
             }
 
