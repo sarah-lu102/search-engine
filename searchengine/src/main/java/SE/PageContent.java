@@ -17,7 +17,7 @@ public class PageContent
     private RocksDB db;
     private Options options;
 
-    PageContent(String dbPath) throws RocksDBException
+    public PageContent(String dbPath) throws RocksDBException
     {
         // the Options class contains a set of configurable DB options
         // that determines the behaviour of the database.

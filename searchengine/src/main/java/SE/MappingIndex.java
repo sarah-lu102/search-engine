@@ -18,7 +18,7 @@ public class MappingIndex
     private RocksDB inverse_db;
     private Options options;
 
-    MappingIndex(String dbPath, String inverse_dbPath) throws RocksDBException
+    public MappingIndex(String dbPath, String inverse_dbPath) throws RocksDBException
     {
         // the Options class contains a set of configurable DB options
         // that determines the behaviour of the database.
@@ -105,6 +105,11 @@ public class MappingIndex
             num++;
         }
         return num;
+    }
+
+    public RocksIterator getIterator(){
+        RocksIterator iter = db.newIterator();
+        return iter;
     }
     
     // public static void main(String[] args)

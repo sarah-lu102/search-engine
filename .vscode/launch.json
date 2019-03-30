@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SpiderTest",
+            "request": "launch",
+            "mainClass": "SEtests.SpiderTest",
+            "projectName": "searchengine"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Indexer",
+            "request": "launch",
+            "mainClass": "SE.Indexer",
+            "projectName": "searchengine"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Crawler",
             "request": "launch",
             "mainClass": "SE.Crawler",

@@ -42,9 +42,9 @@ public class Indexer {
 
     //private RocksDB urlToPageID;
     private MappingIndex urlToPageID;
-    private RocksDB wordIDToWord;
+    private static RocksDB wordIDToWord;
     //private RocksDB forwardIndex;
-     private PageContent pageInfo;
+    private PageContent pageInfo;
     private RocksDB invertedIndex;
     private RocksDB forwardIndex;
 
@@ -67,13 +67,28 @@ public class Indexer {
 
     }
 
+    public PageContent getPageContent(){
+        return pageInfo;
+    }
+
+    public MappingIndex getMappingIndex(){
+        return urlToPageID;
+    }
+
+    public String getWordfromID(Integer i) throws RocksDBException {
+        byte [] val = wordIDToWord.get(SerializationUtils.serialize(i));
+        if(val == null) System.out.println("null");
+        String s = new String(val);
+        return s;
+    }
+
     public static Boolean validURL(String url){
         String s = getBody(url);
         if(s != null && !s.isEmpty()) return true;
         return false;
     }
 
-    public  HashMap<Integer, ArrayList<Integer>> extractWordIDs(String url) throws ParserException
+    public HashMap<Integer, ArrayList<Integer>> extractWordIDs(String url) throws ParserException
     {
         StopStem stopStem = new StopStem("stopwords.txt");
         HashMap<Integer, ArrayList<Integer>> words = new HashMap<>();
@@ -169,31 +184,6 @@ public class Indexer {
         }
     }
 
-    // public static Date getDate(String url) {
-    //     try {
-    //         URL u = new URL(url);
-    //         HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
-    //         System.out.println(httpCon.getLastModified());
-    //         Date date = new Date(httpCon.getLastModified());
-            
-    //         return date;
-    //     } catch (Exception e) {
-    //         System.out.println(e.getStackTrace());
-    //     }
-    //     return Calendar.getInstance().getTime();
-    // }
-
-    // public static long getPageSize(String url) {
-    //     try {
-    //         URL u = new URL(url);
-    //         HttpURLConnection httpCon = (HttpURLConnection) u.openConnection();
-    //         return httpCon.getContentLength();
-    //     } catch (Exception e) {
-    //         System.out.println(e.getStackTrace());
-    //     }
-    //     return -1;
-    // }
-
     public static int getPageSize(String url) {
         try {
             URL u = new URL(url);
@@ -234,18 +224,6 @@ public class Indexer {
     }
 
     public void index(String url) throws RocksDBException {
-        // byte[] content = urlToPageID.get(url.getBytes());
-        // if (content == null) {
-        //     content = ("doc 1").getBytes();
-        // } else {
-        //     content = (new String(content) + " doc 1").getBytes();
-        //     //content = ("doc 1").getBytes();
-        // }
-        // urlToPageID.put(url.getBytes(), content);
-        //int pageID = urlToPageID.getSize();
-        //System.out.println(pageID);
-
-       
         try{
             int pageID = url.hashCode();
             //int pageID = urlToPageID.getSize();
@@ -275,22 +253,10 @@ public class Indexer {
         }
 
         indexWords(url);
-        /*
-        * TODO:
-        * check if page has already been indexed
-        * check if date has been updated
-        * if date = -1, set to current date
-        * if size = -1, get length of content (count the number of characters = size of body string?)
-        * function: url to pageID mapping in RocksDB
-        * function: word to wordID mapping in RocksDB
-        * function: create/update forward index in RocksDB
-        * function: create/update inverted index in RocksDB
-        */
     }
 
     public void indexWords(String url){
         int pageID = url.hashCode();
-
 
         try{
             HashMap<Integer, ArrayList<Integer>> words = extractWordIDs(url);
@@ -346,11 +312,11 @@ public class Indexer {
     {
         // Print all the data in the hashtable
         // ADD YOUR CODES HERE
-        urlToPageID.printAll();
-        System.out.println("Getting ID");
-        System.out.println(urlToPageID.getID("http://www.cse.ust.hk"));
-        System.out.println("Getting Page From ID");
-System.out.println(urlToPageID.getURL(2));
+//         urlToPageID.printAll();
+//         System.out.println("Getting ID");
+//         System.out.println(urlToPageID.getID("http://www.cse.ust.hk"));
+//         System.out.println("Getting Page From ID");
+// System.out.println(urlToPageID.getURL(2));
 
 System.out.println("Getting page info from id 0");
 int testID=urlToPageID.getID("http://www.cse.ust.hk");
