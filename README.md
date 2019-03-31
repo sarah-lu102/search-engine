@@ -48,7 +48,13 @@ To the run the Spider Crawler run:
 mvn exec:java -Dexec.mainclass=SE.Crawler
 ```
 
+To run the Spider Test run:
+```bash
+mvn exec:java -Dexec.mainclass=SEtests.SpiderTest
+```
+
+
 ## Contributing
-Sarah Lu
+Jia (Sarah) Lu
 Adam Feuer
 Sam Baltrus

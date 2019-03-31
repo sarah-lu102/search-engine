@@ -4,6 +4,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - SpiderTest",
             "request": "launch",
+            "mainClass": "SE.SpiderTest",
+            "projectName": "searchengine"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SpiderTest",
+            "request": "launch",
             "mainClass": "SEtests.SpiderTest",
             "projectName": "searchengine"
         },

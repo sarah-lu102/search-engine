@@ -1,6 +1,6 @@
 Department of Computer Science and Engineering - HKUST
 http://www.cse.ust.hk
-Saturday, March 30, 2019, 224
+Sunday, March 31, 2019, 224
 reason 2; dec 2; 07 1; nowcast 2; about 5; academ 3; cuttingedg 1; instagram 2; lifehkust 1; analysi 3; via 2; lei 2; music 2; visual 2; qifeng 2; approxim 2; pinpoint 3; 11 1; 12 4; apr 2; undergradu 6; 15 2; 19 3; realiti 2; mxnet 2; secur 2; kong 4; mission 2; 2 1; humanrobot 2; xunlei 2; 7 3; spatiotempor 3; az 1; privaci 2; 20 1; qualiti 2; 24 1; fact 2; 25 1; 27 1; ahead 1; 28 1; engag 2; ceo 2; announc 2; augment 3; how 2; by 1; hkust 12; direc 1; jobshkust 1; industri 1; machin 8; devic 2; a 2; set 2; learn 12; staff 4; launch 4; right 2; march 3; the 4; facilit 3; qian 2; fast 2; googl 2; meet 2; open 2; spotlight 1; joint 2; reserv 2; elearn 2; consortium 1; project 2; research 18; dr 2; 3d 1; view 3; 20190328 1; school 2; postgradu 8; contact 4; remedi 2; talk 2; us 6; area 2; practic 2; test 3; last 1; laboratori 2; vision 3; blockchain 2; octob 1; activ 2; faculti 8; next 1; deep 2; mood 2; video 1; univers 3; peopl 4; comput 4; admis 2; privileg 2; nov 3; softwar 3; queri 2; seeker 2; exclus 2; class 2; live 2; wai 1; collabor 1; center 2; graduat 2; earli 2; apcsc 2; forum 7; 2019 6; 2018 16; 2017 2; china 2; 2015 3; step 2; realm 2; employ 2; big 4; copyright 2; seminar 2; spatialtempor 2; zhang 2; program 2; april 1; vulner 2; decemb 2; model 2; technologi 4; fri 3; creat 2; oct 2; applic 2; understand 3; index 2; modul 2; destin 2; hong 4; toward 3; futur 4; women 2; engin 8; librari 1; optim 2; crowdsourc 2; interac 2; smart 4; youtub 2; alumni 6; assur 2; world 2; mai 1; locat 4; share 2; event 4; map 2; 1516 2; more 3; facebook 4; prof 2; citi 2; placem 2; fake 2; first 2; quick 2; cognit 2; data 6; receiv 2; lab 2; find 5; medicin 2; enrich 2; inellig 1; depart 3; net 1; sitemap 2; all 2; new 7; sens 2; profil 1; workshop 6; xiaoi 2; hkustcs 2; real 2; amazon 2; welcom 2; precipit 2; recruit 2; updat 1; job 4; scienc 4; code 3; student 2; coda 3; link 2; linkedin 2; novemb 4; simpler 2; platform 3; network 2; transform 2; award 2; public 3; and 1; februari 1; of 3; cre 2; predict 5; dive 2; chen 4; facil 2; process 2; tackl 2; wechat 2; follow 2; panoram 3; analyt 2; cse 4; previou 1; pg 2; congreg 2; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -54,20 +54,20 @@ https://www.cse.ust.hk/pg/admissions/recruiting
 https://www.cse.ust.hk/pg/ourgraduates
 https://www.cse.ust.hk/admin/search
 https://www.seng.ust.hk
+https://pgnews.ust.hk/feb-2017-feature-stories-part-2
+http://epublish.ust.hk/cgi-bin/eng/story.php?id=96&amp;catid=97&amp;keycode=88b7aae0ae45ddb0e6e000ee2682721a&amp;token=17b43a00aeb0f8f8f08df16ae664909f
+https://www.techinasia.com/weseer-smarter-censorship-china
 https://www.chinadailyhk.com/articles/14/65/28/1541125674562.html?newsId=52460
 https://www.seng.ust.hk/web/eng/news_detail.php?id=942
 https://www.scmp.com/presented/business/topics/hkust-25th-anniversary/article/1884178/creating-predictive-future-big-data
-http://epublish.ust.hk/cgi-bin/eng/story.php?id=96&amp;catid=97&amp;keycode=88b7aae0ae45ddb0e6e000ee2682721a&amp;token=17b43a00aeb0f8f8f08df16ae664909f
+https://www.cse.ust.hk/#spotlight-slides
+https://www.cse.ust.hk/#spotlight-slides
 https://pgnews.ust.hk/feb-2017-feature-stories-part-2
+http://epublish.ust.hk/cgi-bin/eng/story.php?id=96&amp;catid=97&amp;keycode=88b7aae0ae45ddb0e6e000ee2682721a&amp;token=17b43a00aeb0f8f8f08df16ae664909f
 https://www.techinasia.com/weseer-smarter-censorship-china
-https://www.cse.ust.hk/#spotlight-slides
-https://www.cse.ust.hk/#spotlight-slides
 https://www.chinadailyhk.com/articles/14/65/28/1541125674562.html?newsId=52460
 https://www.seng.ust.hk/web/eng/news_detail.php?id=942
 https://www.scmp.com/presented/business/topics/hkust-25th-anniversary/article/1884178/creating-predictive-future-big-data
-http://epublish.ust.hk/cgi-bin/eng/story.php?id=96&amp;catid=97&amp;keycode=88b7aae0ae45ddb0e6e000ee2682721a&amp;token=17b43a00aeb0f8f8f08df16ae664909f
-https://pgnews.ust.hk/feb-2017-feature-stories-part-2
-https://www.techinasia.com/weseer-smarter-censorship-china
 https://www.cse.ust.hk/ug
 https://www.cse.ust.hk/pg
 https://www.cse.ust.hk/Restricted
@@ -88,30 +88,30 @@ https://www.cse.ust.hk/News/GoogleResearchAward2018
 https://www.seng.ust.hk/web/eng/news_detail.php?id=1119
 https://www.cse.ust.hk/BDI/news/news_20190307.html
 https://www.cse.ust.hk/News
-https://www.cse.ust.hk/pg/research/projects/yike/aqp
-https://www.cse.ust.hk/pg/research/projects/gchan/lst
-https://www.cse.ust.hk/pg/research/projects/qianzh/sds
-https://www.cse.ust.hk/pg/research/projects/horner/mmm
-https://www.cse.ust.hk/pg/research/projects/charlesz/pinpoint
 https://www.cse.ust.hk/pg/research/projects/kaichen/coda
 https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-hko
-https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-ed
-https://www.cse.ust.hk/pg/research/projects/leichen/stc
-https://www.cse.ust.hk/pg/research/projects/scc/castle
-https://www.cse.ust.hk/pg/research/projects/mxj/hri
-https://www.cse.ust.hk/pg/research/projects/lzhang/aipano
-https://www.cse.ust.hk/pg/research/projects/yike/aqp
-https://www.cse.ust.hk/pg/research/projects/gchan/lst
 https://www.cse.ust.hk/pg/research/projects/qianzh/sds
+https://www.cse.ust.hk/pg/research/projects/leichen/stc
+https://www.cse.ust.hk/pg/research/projects/yike/aqp
+https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-ed
 https://www.cse.ust.hk/pg/research/projects/horner/mmm
+https://www.cse.ust.hk/pg/research/projects/lzhang/aipano
+https://www.cse.ust.hk/pg/research/projects/gchan/lst
+https://www.cse.ust.hk/pg/research/projects/scc/castle
 https://www.cse.ust.hk/pg/research/projects/charlesz/pinpoint
+https://www.cse.ust.hk/pg/research/projects/mxj/hri
 https://www.cse.ust.hk/pg/research/projects/kaichen/coda
 https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-hko
-https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-ed
+https://www.cse.ust.hk/pg/research/projects/qianzh/sds
 https://www.cse.ust.hk/pg/research/projects/leichen/stc
-https://www.cse.ust.hk/pg/research/projects/scc/castle
-https://www.cse.ust.hk/pg/research/projects/mxj/hri
+https://www.cse.ust.hk/pg/research/projects/yike/aqp
+https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-ed
+https://www.cse.ust.hk/pg/research/projects/horner/mmm
 https://www.cse.ust.hk/pg/research/projects/lzhang/aipano
+https://www.cse.ust.hk/pg/research/projects/gchan/lst
+https://www.cse.ust.hk/pg/research/projects/scc/castle
+https://www.cse.ust.hk/pg/research/projects/charlesz/pinpoint
+https://www.cse.ust.hk/pg/research/projects/mxj/hri
 https://www.cse.ust.hk/admin/welcome
 https://www.cse.ust.hk/admin/mission
 https://www.cse.ust.hk/admin/about
@@ -154,7 +154,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Faculty Profiles | The Hong Kong University of Science and Technology
 https://facultyprofiles.ust.hk
-Saturday, March 30, 2019, 13494
+Sunday, March 31, 2019, 13494
 scienc 3; date 1; correctli 1; copyright 2; librari 1; reserv 2; websit 1; offic 2; about 2; institu 2; academ 1; your 1; univers 4; lifehkust 1; research 2; polici 1; view 1; browser 3; hkust 3; direc 1; jobshkust 1; technologi 3; depart 1; map 1; all 2; new 1; a 3; profil 2; more 1; right 2; follow 1; kong 3; the 3; hong 3; az 1; privaci 1; updat 2; oirusthk 2; faculti 2; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -183,7 +183,7 @@ https://facultyprofiles.ust.hk
 ------------------------------------------------------------------------------
 HKUST Library
 https://library.ust.hk
-Saturday, March 30, 2019, 83728
+Sunday, March 31, 2019, 83728
 inform 1; 04 1; 07 1; about 5; offcampu 1; 情牽方寸國際藏書票展覽 1; institu 3; academ 3; bai 1; lifehkust 2; eresourc 1; lee 2; via 1; these 1; bookplat 1; onlin 2; favorit 1; coordin 1; 11 1; qr 1; newslett 3; undergradu 1; 15 1; cours 8; an 1; databas 8; kong 5; mission 1; plastic 4; az 2; privaci 2; detail 1; seri 1; whataposs 1; access 4; engag 1; scan 1; kee 2; outcomebas 1; noissnisbngenreformcours 1; announc 1; polici 4; search 12; current 2; rss 2; hkall 4; 1f 1; 97011055 1; hkust 17; direc 2; jobshkust 2; where 2; audio 1; behavior 1; 30 1; popular 1; 31 1; email 1; resourc 6; a 3; art 2; b 2; c 2; intern 1; d 2; docum 2; learn 1; e 2; f 2; g 2; h 2; librarian 3; i 2; dataspacehkust 1; staff 4; j 2; k 2; right 2; l 2; m 2; n 2; o 2; commerc 1; p 2; the 5; q 1; materi 1; libraryusthk 1; insid 1; r 1; s 2; t 2; u 2; v 2; tk 1; w 2; ask 2; x 1; borrow 5; y 1; z 1; imag 1; paul 1; interview 1; chiu 1; venu 2; jun 2; dimen 1; reserv 6; elearn 2; wordpress 1; reader 1; project 1; research 12; hold 1; lin 1; 3d 2; helper 1; postgradu 1; catalogprimo 1; rare 1; contact 2; talk 2; us 6; michel 1; digit 1; brows 1; chines 1; ejourn 3; suet 1; develop 1; check 1; scholar 1; vision 1; ex 1; name 2; guid 11; support 5; faculti 3; courseembed 1; whatsapp 1; arriv 2; loan 4; book 6; for 1; rule 2; video 4; univers 7; antiqu 1; content 2; recal 1; peopl 1; comput 6; kowloon 1; central 1; instruc 2; softwar 1; alert 1; 薈藝空間 1; interlibrari 3; class 1; wordphraseauthortitlesubjectcal 1; gf 1; powersearch 2; teach 6; center 1; start 1; room 4; special 2; deliveri 2; 2019 6; print 4; 2018 1; china 1; form 1; fung 1; renew 1; directori 1; scholarli 3; career 1; copyright 2; pui 1; catalog 1; program 1; awardwin 1; galleri 1; glanc 1; output 1; browzin 1; 天空膠雨 2; informationsmart 3; technologi 4; join 1; ediscoveri 1; id 1; plan 2; exhibi 6; ig 1; oct 1; creat 1; item 2; goal 1; chow 1; in 1; hong 5; studi 6; system 1; phone 1; coach 1; jointli 1; love 1; librari 31; skip 1; copi 1; youtub 2; alumni 3; stream 1; dataspac 1; statist 2; place 3; event 3; map 3; vacanc 2; mar 3; libri 1; avail 1; ko 1; subscrib 1; more 3; facebook 2; help 1; site 1; 23586772 2; ezon 1; repositori 3; shau 2; usb 1; subject 3; newsclip 1; main 1; blog 2; trial 2; space 6; nameinstructor 1; chamber 1; xyz 1; wordphras 1; commun 1; depart 2; group 1; all 5; literaci 1; new 10; kuen 1; profil 3; workshop 4; spd 1; todai 1; orcid 1; film 1; my 4; ezproxi 1; water 1; servic 7; collec 9; campu 1; instructor 1; marker 1; histori 1; visitor 1; job 2; achiev 1; scienc 4; no 1; request 1; game 2; week 1; student 1; bridg 3; becom 3; media 1; linkedin 1; respons 1; lectur 1; point 1; highlight 2; public 3; paper 1; hour 2; department 1; floor 2; on 1; facil 1; headset 1; clear 1; transport 1; shuen 1; follow 1; confer 2; equip 3; archiv 1; wireless 1; visit 1; user 2; account 3; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -445,7 +445,7 @@ valid 1; path 2; fail 1; request 1; build 1; certif 1; unabl 1; orghtmlparseruti
 ------------------------------------------------------------------------------
 Department of Computer Science and Engineering - HKUST
 https://www.cse.ust.hk
-Saturday, March 30, 2019, 41427
+Sunday, March 31, 2019, 41427
 reason 2; dec 2; 07 1; nowcast 2; about 5; academ 3; cuttingedg 1; instagram 2; lifehkust 1; analysi 3; via 2; lei 2; music 2; visual 2; qifeng 2; approxim 2; pinpoint 3; 11 1; 12 4; apr 2; undergradu 6; 15 2; 19 3; realiti 2; mxnet 2; secur 2; kong 4; mission 2; 2 1; humanrobot 2; xunlei 2; 7 3; spatiotempor 3; az 1; privaci 2; 20 1; qualiti 2; 24 1; fact 2; 25 1; 27 1; ahead 1; 28 1; engag 2; ceo 2; announc 2; augment 3; how 2; by 1; hkust 12; direc 1; jobshkust 1; industri 1; machin 8; devic 2; a 2; set 2; learn 12; staff 4; launch 4; right 2; march 3; the 4; facilit 3; qian 2; fast 2; googl 2; meet 2; open 2; spotlight 1; joint 2; reserv 2; elearn 2; consortium 1; project 2; research 18; dr 2; 3d 1; view 3; 20190328 1; school 2; postgradu 8; contact 4; remedi 2; talk 2; us 6; area 2; practic 2; test 3; last 1; laboratori 2; vision 3; blockchain 2; octob 1; activ 2; faculti 8; next 1; deep 2; mood 2; video 1; univers 3; peopl 4; comput 4; admis 2; privileg 2; nov 3; softwar 3; queri 2; seeker 2; exclus 2; class 2; live 2; wai 1; collabor 1; center 2; graduat 2; earli 2; apcsc 2; forum 7; 2019 6; 2018 16; 2017 2; china 2; 2015 3; step 2; realm 2; employ 2; big 4; copyright 2; seminar 2; spatialtempor 2; zhang 2; program 2; april 1; vulner 2; decemb 2; model 2; technologi 4; fri 3; creat 2; oct 2; applic 2; understand 3; index 2; modul 2; destin 2; hong 4; toward 3; futur 4; women 2; engin 8; librari 1; optim 2; crowdsourc 2; interac 2; smart 4; youtub 2; alumni 6; assur 2; world 2; mai 1; locat 4; share 2; event 4; map 2; 1516 2; more 3; facebook 4; prof 2; citi 2; placem 2; fake 2; first 2; quick 2; cognit 2; data 6; receiv 2; lab 2; find 5; medicin 2; enrich 2; inellig 1; depart 3; net 1; sitemap 2; all 2; new 7; sens 2; profil 1; workshop 6; xiaoi 2; hkustcs 2; real 2; amazon 2; welcom 2; precipit 2; recruit 2; updat 1; job 4; scienc 4; code 3; student 2; coda 3; link 2; linkedin 2; novemb 4; simpler 2; platform 3; network 2; transform 2; award 2; public 3; and 1; februari 1; of 3; cre 2; predict 5; dive 2; chen 4; facil 2; process 2; tackl 2; wechat 2; follow 2; panoram 3; analyt 2; cse 4; previou 1; pg 2; congreg 2; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -499,20 +499,20 @@ https://www.cse.ust.hk/pg/admissions/recruiting
 https://www.cse.ust.hk/pg/ourgraduates
 https://www.cse.ust.hk/admin/search
 https://www.seng.ust.hk
-https://www.seng.ust.hk/web/eng/news_detail.php?id=942
-https://www.scmp.com/presented/business/topics/hkust-25th-anniversary/article/1884178/creating-predictive-future-big-data
-https://pgnews.ust.hk/feb-2017-feature-stories-part-2
 http://epublish.ust.hk/cgi-bin/eng/story.php?id=96&amp;catid=97&amp;keycode=88b7aae0ae45ddb0e6e000ee2682721a&amp;token=17b43a00aeb0f8f8f08df16ae664909f
+https://www.seng.ust.hk/web/eng/news_detail.php?id=942
 https://www.techinasia.com/weseer-smarter-censorship-china
+https://pgnews.ust.hk/feb-2017-feature-stories-part-2
 https://www.chinadailyhk.com/articles/14/65/28/1541125674562.html?newsId=52460
+https://www.scmp.com/presented/business/topics/hkust-25th-anniversary/article/1884178/creating-predictive-future-big-data
 https://www.cse.ust.hk#spotlight-slides
 https://www.cse.ust.hk#spotlight-slides
-https://www.seng.ust.hk/web/eng/news_detail.php?id=942
-https://www.scmp.com/presented/business/topics/hkust-25th-anniversary/article/1884178/creating-predictive-future-big-data
-https://pgnews.ust.hk/feb-2017-feature-stories-part-2
 http://epublish.ust.hk/cgi-bin/eng/story.php?id=96&amp;catid=97&amp;keycode=88b7aae0ae45ddb0e6e000ee2682721a&amp;token=17b43a00aeb0f8f8f08df16ae664909f
+https://www.seng.ust.hk/web/eng/news_detail.php?id=942
 https://www.techinasia.com/weseer-smarter-censorship-china
+https://pgnews.ust.hk/feb-2017-feature-stories-part-2
 https://www.chinadailyhk.com/articles/14/65/28/1541125674562.html?newsId=52460
+https://www.scmp.com/presented/business/topics/hkust-25th-anniversary/article/1884178/creating-predictive-future-big-data
 https://www.cse.ust.hk/ug
 https://www.cse.ust.hk/pg
 https://www.cse.ust.hk/Restricted
@@ -533,29 +533,29 @@ https://www.cse.ust.hk/News/GoogleResearchAward2018
 https://www.seng.ust.hk/web/eng/news_detail.php?id=1119
 https://www.cse.ust.hk/BDI/news/news_20190307.html
 https://www.cse.ust.hk/News
-https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-ed
+https://www.cse.ust.hk/pg/research/projects/mxj/hri
+https://www.cse.ust.hk/pg/research/projects/kaichen/coda
+https://www.cse.ust.hk/pg/research/projects/scc/castle
 https://www.cse.ust.hk/pg/research/projects/horner/mmm
-https://www.cse.ust.hk/pg/research/projects/charlesz/pinpoint
-https://www.cse.ust.hk/pg/research/projects/gchan/lst
+https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-ed
 https://www.cse.ust.hk/pg/research/projects/qianzh/sds
 https://www.cse.ust.hk/pg/research/projects/lzhang/aipano
-https://www.cse.ust.hk/pg/research/projects/scc/castle
 https://www.cse.ust.hk/pg/research/projects/leichen/stc
+https://www.cse.ust.hk/pg/research/projects/charlesz/pinpoint
 https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-hko
-https://www.cse.ust.hk/pg/research/projects/kaichen/coda
-https://www.cse.ust.hk/pg/research/projects/mxj/hri
+https://www.cse.ust.hk/pg/research/projects/gchan/lst
 https://www.cse.ust.hk/pg/research/projects/yike/aqp
-https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-ed
+https://www.cse.ust.hk/pg/research/projects/mxj/hri
+https://www.cse.ust.hk/pg/research/projects/kaichen/coda
+https://www.cse.ust.hk/pg/research/projects/scc/castle
 https://www.cse.ust.hk/pg/research/projects/horner/mmm
-https://www.cse.ust.hk/pg/research/projects/charlesz/pinpoint
-https://www.cse.ust.hk/pg/research/projects/gchan/lst
+https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-ed
 https://www.cse.ust.hk/pg/research/projects/qianzh/sds
 https://www.cse.ust.hk/pg/research/projects/lzhang/aipano
-https://www.cse.ust.hk/pg/research/projects/scc/castle
 https://www.cse.ust.hk/pg/research/projects/leichen/stc
+https://www.cse.ust.hk/pg/research/projects/charlesz/pinpoint
 https://www.cse.ust.hk/pg/research/projects/dyyeung/ml-hko
-https://www.cse.ust.hk/pg/research/projects/kaichen/coda
-https://www.cse.ust.hk/pg/research/projects/mxj/hri
+https://www.cse.ust.hk/pg/research/projects/gchan/lst
 https://www.cse.ust.hk/pg/research/projects/yike/aqp
 https://www.cse.ust.hk/admin/welcome
 https://www.cse.ust.hk/admin/mission
@@ -599,7 +599,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 News | HKUST CSE
 https://www.cse.ust.hk/News
-Saturday, March 30, 2019, 41600
+Sunday, March 31, 2019, 41600
 reason 2; year 7; 201718 5; 07 1; middlewar 2; about 5; 09 1; intellig 2; academ 16; cuttingedg 1; instagram 2; lifehkust 1; robot 1; qifeng 4; runner 2; soft 2; 12 4; alibaba 2; 13 1; undergradu 5; august 3; 15 2; 16 1; 17 1; 18 1; 19 1; ai 2; 20172018 1; kong 5; databas 2; mission 2; keio 1; wang 2; az 1; juli 2; privaci 2; qualiti 2; cup 1; organ 2; frank 2; 23 2; 24 1; fact 2; 25 1; aprugoogl 2; 26 1; 28 1; xiangshan 2; prize 1; announc 2; gold 4; by 1; hkust 15; direc 1; jobshkust 1; mit 1; industri 6; samuel 2; machin 2; 31 1; latest 2; mine 2; 35 4; set 2; learn 2; bdi 2; staff 3; launch 7; innov 4; gibson 2; right 2; march 3; the 2; fast 2; googl 4; partner 2; under 2; open 2; polardb 2; joint 2; reserv 2; consortium 1; project 7; competi 2; research 21; dr 14; 20190328 1; school 2; postgradu 7; contact 4; scholarship 2; won 4; hao 2; ict 2; up 2; us 4; naverlin 2; area 2; last 1; laboratori 2; graph 2; tsoi 2; integr 2; vision 2; name 2; final 1; octob 1; faculti 11; 2012 1; 2011 1; 2010 1; univers 6; peopl 2; 2009 1; comput 4; 2008 1; admis 2; 2007 1; 2006 1; 2005 1; 2004 1; 2003 1; 2002 1; seeker 1; presid 1; collabor 4; societi 1; center 2; asia 2; teach 2; perform 2; graduat 4; grand 2; earli 2; apcsc 2; forum 4; 2019 7; with 1; 2018 30; environment 3; 2017 1; 2016 1; china 2; 2015 1; 2014 1; 2013 1; employ 1; big 3; septemb 1; copyright 2; hk 2; challeng 2; spatialtempor 2; degre 2; chanson 2; program 2; artifici 3; april 2; division 1; neuromorph 2; review 1; decemb 2; technologi 5; index 2; worldwid 2; hong 5; desmond 2; mphil 2; champion 6; jointli 2; engin 2; librari 1; januari 1; ceremoni 1; youtub 2; alumni 3; assur 2; mai 3; mak 2; wei 2; event 2; map 1; more 1; cosupervis 2; facebook 2; phd 14; hkie 2; excel 4; placem 2; first 6; quick 1; cognit 2; receiv 4; data 5; lili 2; lab 3; dai 2; ai4every1 2; host 3; enrich 2; lam 4; inellig 1; depart 1; net 1; brian 2; sitemap 2; all 5; new 7; profil 1; xiaoi 2; workshop 4; welcom 2; professor 2; recruit 2; updat 1; navig 2; job 3; seng 2; appreci 2; scienc 6; student 25; link 1; becom 2; best 1; linkedin 2; novemb 1; ypec 2; platform 1; award 27; cre 2; februari 1; on 2; chen 4; facil 2; cpeg 2; cbe 4; categori 2; fellowship 3; follow 2; techbas 2; confer 2; cse 15; pg 2; fyp 6; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -760,7 +760,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Faculty Intranet | HKUST CSE
 https://www.cse.ust.hk/Restricted
-Saturday, March 30, 2019, 25715
+Sunday, March 31, 2019, 25715
 employ 1; copyright 2; inform 1; year 1; asterisk 1; about 5; academ 3; your 1; instagram 2; lifehkust 1; technologi 2; onlin 1; plan 1; applic 2; undergradu 5; 20180831 1; bookshelf 1; manag 2; kong 2; facultypersonnel 1; hong 2; mission 2; system 6; az 1; privaci 2; qualiti 2; engin 2; librari 1; fact 2; access 3; restrict 1; requir 1; youtub 2; alumni 3; assur 2; web 1; hkust 6; direc 1; jobshkust 1; event 2; leav 1; map 1; resourc 1; more 1; facebook 2; staff 5; right 2; the 2; fast 2; meet 1; placem 2; to 1; open 2; quick 1; mail 1; reserv 2; project 3; itsc 1; lab 2; research 8; school 2; postgradu 7; contact 4; enrich 2; logo 3; net 4; depart 1; us 4; sitemap 2; area 4; all 2; new 3; last 1; profil 1; onli 1; sent 1; welcom 2; vision 2; servic 1; recruit 2; final 1; updat 1; job 4; exchang 1; faculti 6; scienc 2; note 2; student 1; book 1; link 1; for 1; admin 2; linkedin 2; univers 3; peopl 2; network 1; comput 2; outsid 1; admis 2; idriv 1; seeker 1; facil 2; center 2; graduat 2; follow 2; earli 2; room 1; cse 10; vpn 1; connec 1; pg 2; cseformusthk 1; webmail 1; user 1; outlook 1; mark 1; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -872,7 +872,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 About CSE | HKUST CSE
 https://www.cse.ust.hk/admin/about
-Saturday, March 30, 2019, 29293
+Sunday, March 31, 2019, 29293
 employ 1; disconnect 1; individu 1; copyright 2; inform 5; cultur 2; potenti 1; challeng 1; about 7; pervas 1; bring 1; intellig 1; degre 1; realiz 1; academ 3; program 3; instagram 2; lifehkust 1; artifici 1; environ 2; cover 1; plai 1; offer 1; beng 1; broad 1; ordinari 1; technologi 8; embed 1; rang 1; plan 1; profession 1; applic 1; creat 1; undergradu 5; 20180315 1; past 1; work 1; impact 2; it 1; cours 2; evolv 1; kong 2; explicit 1; hong 2; mission 2; studi 2; system 2; afford 1; bsc 1; slow 1; field 1; opportun 1; az 1; privaci 2; mphil 1; begin 1; qualiti 2; humancomput 1; engin 5; implicit 1; educ 1; librari 1; fact 2; natur 1; tailor 1; interac 2; requir 1; youtub 2; alumni 3; assur 2; interfac 1; web 1; knowledgebas 1; hkust 4; larg 1; direc 1; jobshkust 1; industri 2; event 2; interconnec 1; map 1; graphic 1; devic 1; resourc 1; learn 1; more 1; facebook 2; staff 3; right 2; phd 1; lead 1; the 5; help 1; multimedia 1; fast 3; meet 1; placem 2; assist 1; msc 1; advanc 3; open 2; through 1; small 1; quick 1; data 1; reserv 2; expens 1; own 2; project 2; prepar 1; lab 2; research 10; workplac 1; structur 1; school 2; postgradu 7; contact 4; function 1; midst 1; enrich 2; depart 3; net 1; us 4; sitemap 2; digit 3; area 2; literaci 1; all 2; new 3; last 1; profil 1; todai 1; develop 1; tool 1; integr 1; welcom 2; vision 2; take 1; recruit 2; topic 1; updat 1; navig 2; ubiquit 1; job 3; region 1; faculti 4; scienc 9; virtual 1; deep 1; student 4; link 1; effort 1; linkedin 2; univers 4; everyon 1; life 1; peopl 2; network 2; comput 19; admis 2; softwar 1; interest 1; design 1; seeker 1; live 3; encourag 1; asid 1; facil 2; societi 1; move 1; wit 1; center 2; graduat 2; follow 2; dedic 1; interconnect 1; earli 2; home 1; highli 1; special 1; cse 5; although 1; pg 2; numer 1; disciplin 1; growth 1; revolu 2; foundat 1; excit 1; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -968,7 +968,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Contact Us | HKUST CSE
 https://www.cse.ust.hk/admin/contact
-Saturday, March 30, 2019, 23975
+Sunday, March 31, 2019, 23975
 employ 1; 7000 1; quick 1; copyright 2; reserv 2; about 5; project 2; academ 3; bai 1; instagram 2; lifehkust 1; lab 2; research 8; school 2; postgradu 7; contact 6; enrich 2; tel 1; technologi 3; depart 3; net 1; fax 1; us 6; sitemap 2; area 2; all 2; new 3; undergradu 5; last 1; profil 1; water 1; kong 4; hong 4; welcom 2; vision 2; mission 2; 2358 2; campu 1; recruit 2; az 1; lift 1; updat 1; privaci 2; navig 2; job 3; faculti 4; qualiti 2; 3528 1; scienc 4; engin 3; librari 1; fact 2; link 1; linkedin 2; univers 4; peopl 2; youtub 2; alumni 3; 2526 1; comput 3; kowloon 1; assur 2; admis 2; 1477 1; 852 2; locat 1; hkust 4; direc 2; jobshkust 1; seeker 1; event 2; map 3; email 1; 20180309 1; facil 2; address 1; more 1; center 2; facebook 2; clear 1; staff 3; graduat 2; right 2; follow 2; earli 2; room 1; the 3; fast 2; cse 4; pg 2; placem 2; open 2; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -1070,7 +1070,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Fast Facts | HKUST CSE
 https://www.cse.ust.hk/admin/factsheet
-Saturday, March 30, 2019, 27564
+Sunday, March 31, 2019, 27564
 employ 1; big 1; copyright 2; inform 2; about 5; degre 2; intellig 1; academ 3; program 5; fair 1; instagram 2; lifehkust 1; artifici 1; number 1; beng 4; 233 1; mathemat 1; electron 1; rank 6; technologi 5; bba 2; cybersecur 1; qs 2; undergradu 6; gener 2; worldwid 2; manag 3; 28th 2; junior 1; kong 2; senior 1; hong 2; mission 2; bsc 2; system 1; field 1; experi 1; az 1; privaci 2; philosophi 2; qualiti 2; 21 2; renown 1; engin 7; educ 2; fact 4; librari 1; languag 1; interac 1; theoret 1; our 1; youtub 2; alumni 3; assur 2; dual 2; world 5; peer 2; hkust 3; direc 1; jobshkust 1; event 2; anoth 2; map 1; mix 1; graphic 1; prestig 1; more 1; facebook 2; staff 3; right 2; phd 1; 141 1; the 3; fast 4; regard 1; placem 2; assist 1; open 2; board 1; 45 1; quick 1; data 3; reserv 2; subject 1; project 2; lab 2; research 9; 20190327 1; school 2; postgradu 8; contact 4; enrich 2; depart 5; net 1; credit 2; us 4; sitemap 2; area 2; all 3; new 3; 20182019 1; last 1; profil 1; level 2; worldclass 1; 26th 2; repres 1; welcom 2; vision 3; professor 3; recruit 2; 603 1; updat 1; navig 2; job 3; 63 1; faculti 10; higher 2; scienc 10; student 1; busi 2; link 1; linkedin 2; univers 8; we 1; peopl 2; network 1; comput 12; admis 2; total 1; 179 2; softwar 1; seeker 1; human 1; facil 2; associ 1; center 2; accord 2; teach 1; graduat 2; follow 2; earli 2; master 3; highli 1; doctor 1; 2019 4; knowledg 1; cse 3; pg 2; earn 1; time 2; 86 1; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -1168,7 +1168,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 CSE Intranet | HKUST CSE
 https://www.cse.ust.hk/admin/intranet
-Saturday, March 30, 2019, 23144
+Sunday, March 31, 2019, 23144
 employ 1; copyright 2; asterisk 1; about 5; academ 3; instagram 2; lifehkust 1; technologi 2; undergradu 5; 20180831 1; kong 2; hong 2; mission 2; system 2; az 1; privaci 2; qualiti 2; engin 2; librari 1; fact 2; access 2; requir 1; polici 1; youtub 2; alumni 3; assur 2; web 1; hkust 4; direc 1; jobshkust 1; event 2; map 1; more 1; facebook 2; staff 3; right 2; cs 2; the 2; fast 2; placem 2; to 1; open 2; quick 1; mail 1; reserv 2; project 2; itsc 1; lab 3; research 8; ug 1; school 2; postgradu 7; contact 4; enrich 2; net 6; depart 1; us 4; sitemap 2; area 2; all 2; new 3; last 1; profil 1; welcom 2; vision 2; servic 1; recruit 2; guid 1; updat 1; job 3; exchang 1; faculti 5; scienc 2; note 1; link 1; schedul 1; linkedin 2; univers 3; peopl 2; network 1; comput 2; outsid 1; admis 2; seeker 1; facil 3; center 2; teach 1; graduat 2; follow 2; earli 2; myport 1; committe 1; cse 7; vpn 1; connec 1; pg 3; webmail 1; user 2; outlook 1; mark 1; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -1275,7 +1275,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Mission and Vision | HKUST CSE
 https://www.cse.ust.hk/admin/mission
-Saturday, March 30, 2019, 26000
+Sunday, March 31, 2019, 26000
 confid 1; inform 3; govern 3; about 5; academ 5; instagram 2; lifehkust 1; analysi 1; wellround 1; environ 2; undergradu 6; serv 1; 20180315 1; impact 1; possess 1; cours 1; benefit 1; kong 5; mission 5; includ 1; creativ 2; az 1; privaci 2; qualiti 2; object 2; organ 1; strong 3; fact 2; lifelong 1; stimul 1; pursu 1; hkust 3; direc 1; jobshkust 1; industri 5; term 1; profes 1; intern 1; learn 3; staff 3; team 1; right 2; the 3; fast 2; assist 1; to 8; demonstr 1; open 2; reserv 2; contribut 2; project 3; prepar 3; research 17; specif 1; school 2; postgradu 8; contact 4; generalist 1; instil 1; implement 1; us 4; area 2; which 1; practic 2; last 1; develop 5; vision 5; catalyst 1; activ 1; region 2; faculti 5; compet 1; idea 1; attract 1; univers 3; peopl 2; scientif 1; comput 14; admis 2; skill 1; combin 1; seeker 1; scienceengin 1; promot 1; choic 1; societi 3; center 2; teach 1; transmit 1; graduat 4; earli 2; target 1; knowledg 4; china 2; hub 1; employ 1; leader 2; career 2; individu 2; copyright 2; program 1; pioneer 1; theori 1; consist 1; outstand 1; broad 1; technologi 9; profession 3; applic 2; partnership 1; in 1; worldwid 1; classroom 1; hong 5; statem 2; studi 2; field 1; philosophi 1; recogn 1; engin 9; educ 4; librari 1; aim 1; natur 1; local 1; youtub 2; alumni 3; assur 2; world 1; government 1; knowledgebas 1; event 2; map 1; variou 1; product 1; more 1; discoveri 1; facebook 2; lead 1; excel 2; agenc 1; perspect 1; placem 2; relev 1; advanc 1; quick 1; lab 2; that 1; multidisciplinari 1; academia 2; divers 1; enrich 2; commun 3; depart 2; net 1; sitemap 2; all 2; new 3; hallmark 1; profil 1; particular 2; welcom 2; servic 1; expand 1; transfer 1; specialist 1; recruit 2; ethic 1; effect 1; updat 1; navig 2; job 3; produc 1; bodi 2; who 1; scienc 10; student 5; link 1; linkedin 2; fundament 1; leadership 1; design 2; dynam 1; provid 5; facil 2; technic 1; follow 3; qualifi 1; highli 1; cse 3; conduct 1; mean 1; pg 2; disciplin 2; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -1371,7 +1371,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Alumni | HKUST CSE
 https://www.cse.ust.hk/admin/people/alumni
-Saturday, March 30, 2019, 23250
+Sunday, March 31, 2019, 23250
 employ 1; copyright 2; about 5; academ 3; program 1; instagram 2; lifehkust 1; technologi 3; creat 1; undergradu 5; kong 3; hong 3; mission 2; az 1; privaci 2; qualiti 2; organ 2; engin 3; librari 1; fact 2; youtub 2; alumni 8; assur 2; found 1; world 1; 1991 1; hkust 4; direc 1; jobshkust 1; industri 1; statist 1; event 2; map 1; close 1; regular 1; more 1; themselv 1; facebook 2; staff 3; right 2; the 3; fast 2; ti 1; placem 3; relev 1; open 2; quick 1; reserv 2; project 2; lab 2; research 8; academia 1; school 2; postgradu 7; contact 4; enrich 2; commun 1; affair 1; depart 3; net 1; us 4; sitemap 2; area 2; all 2; new 3; last 1; profil 1; develop 1; establish 1; welcom 2; vision 2; recruit 2; 20190312 1; updat 2; navig 2; job 3; sinc 1; faculti 4; scienc 4; link 1; deliv 1; linkedin 2; univers 4; platform 1; peopl 2; comput 3; admis 2; seeker 1; facil 2; center 2; graduat 4; follow 2; dedic 1; earli 2; cse 5; build 1; pg 2; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -1470,7 +1470,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Faculty | HKUST CSE
 https://www.cse.ust.hk/admin/people/faculty
-Saturday, March 30, 2019, 186504
+Sunday, March 31, 2019, 186504
 rm2535 2; rm3503 2; psandercseusthk 3; rm3504 2; dekai 3; rm2537 2; rm3506 2; 易珂 2; rm2539 2; rm3507 2; ricci 3; rm3508 2; rm3509 2; luo 3; intellig 31; academ 3; rolandcseusthk 3; kwangt 3; saikitusthk 3; rm2541 2; rm3510 2; rm3511 2; rm3512 2; rm3513 2; rm2527 2; rm2529 2; senior 3; az 1; rm2531 2; rm2533 2; rm2534 2; 樂創基 2; rm3525 4; yqsongcseusthk 3; bo 3; result 1; search 1; hkust 3; direc 1; chish 3; rm3531 2; rm3533 2; rm3534 2; rm3514 2; rm3515 2; b 3; rm3516 2; c 3; rm3517 2; chin 3; rm3518 2; rm3519 2; ming 3; f 3; h 3; photo 1; staff 3; j 3; k 3; gibson 3; right 2; m 3; gibsoncseusthk 3; leichencseusthk 3; the 2; qian 3; fast 2; luocseusthk 3; s 3; t 3; mordecai 3; y 3; kwok 3; 高可齡 2; isd 2; paul 3; chiw 3; rm3524 2; reserv 2; derick 3; 李昕 2; panhuicseusthk 3; 辛達德 2; act 3; postgradu 7; contact 4; wilfr 3; tim 3; pan 3; dyyeungcseusthk 3; ec 4; info 1; area 5; gari 3; andrew 3; golincseusthk 3; tsoi 3; 劉明 2; vision 29; 6952 2; yeung 6; cecia 3; faculti 8; 蔡友集 2; 6971 2; 6973 2; 6972 2; huamin 3; univers 3; 張成志 2; primari 6; tang 3; ding 3; softwar 17; muppalacseusthk 3; seeker 1; tinyau 3; yuw 3; saikit 3; nicseusthk 3; 6980 2; 6982 2; 6984 4; 6983 2; raymond 3; 倪明選 2; room 1; mgmt 1; 6975 2; 6974 2; 6976 2; 6979 2; hui 6; 6978 2; bensaou 3; 6991 2; copyright 2; 6990 2; 6993 2; timchengusthk 3; yuwinggmailcom 3; 6992 2; 6995 2; 6994 4; zhang 15; charleszcseusthk 3; artifici 31; shingchi 3; papadia 3; papadopoulo 3; achungcseusthk 3; taowcseusthk 3; riccicseusthk 3; 6986 4; 6985 2; text 1; lixincseusthk 3; 6987 2; 6989 2; cyt3007 2; song 3; 屈華民 2; cybersecur 13; diklun 3; 陳祈 2; manag 18; hong 2; system 22; 6997 2; quancseusthk 3; nevin 3; 6996 2; desmond 3; 6998 2; jame 3; toni 3; librari 1; 張川 2; 戴宇榮 2; 鄧智強 2; interac 19; scccseusthk 3; youtub 2; assur 2; mak 3; jogesh 3; 韓隸 2; ke 3; map 1; ki 3; cyt2011 2; quan 3; ngok 3; lianwen 3; 吳兆鴻 2; hamdicseusthk 3; aryacseusthk 3; golin 3; placem 2; 沈運申 2; helenscseusthk 3; li 6; 8837 2; roland 3; 8838 2; rm3547 2; rm3548 4; rm3549 2; rm2454 2; desmondcseusthk 3; eeliumusthk 3; shen 6; lab 2; 楊世傑 2; ma 3; tingchuen 3; lam 6; rm3551 2; wilfredcseusthk 3; rm3553 4; net 1; brian 3; rm3554 2; rm3555 2; rm3556 2; sitemap 2; kaichencseusthk 3; rm3557 2; all 4; new 3; rm3537 2; rm3538 2; 梁煒霆 2; sort 1; tencent 3; kanw 3; welcom 2; professor 189; dekaicseusthk 3; csbbcseusthk 3; ng 3; updat 1; rm3541 2; position 3; ni 3; rm3544 2; rm3545 2; 王韜 2; 龐鼎全 2; no 1; 陳凱 2; lectur 15; 權龍 2; head 6; kai 3; cktangcseusthk 3; pedro 3; xiaojuan 3; lang 1; siuhung 3; rm3558 4; rm3559 2; 8766 2; 羅瓊 2; chikeung 3; cse 4; 楊瓞仁 2; sander 3; pg 2; lochovski 3; rm3561 2; rm3563 2; 8770 2; inform 18; 8771 2; 8776 2; 8775 2; about 5; instagram 2; lifehkust 1; lee 3; lei 6; helen 3; 麻曉娟 2; 黃智榮 2; 8769 2; 8767 2; qifeng 3; 8768 2; adjunct 12; 白德善 2; undergradu 5; qu 3; cunsheng 3; 雷晖 2; kong 2; 康立德 2; mission 2; 張黔 2; wang 9; 陳雙幸 2; privaci 2; ieong 3; 8537 2; kcceciacseusthk 3; qualiti 2; zhengyou 3; extn 1; fact 2; languag 16; zhengyoutencentcom 3; theoret 11; 林傑遜 2; long 3; cdingcseusthk 3; 李迪麟 2; jobshkust 1; yikecseusthk 3; 金成勳 2; graphic 27; email 1; 伍德瑞 2; dimitri 6; yangqiu 3; 梅伯樂 2; 陳启峰 2; yau 3; shuai 3; 安雅信 2; gchancseusthk 3; brahim 3; charl 3; mounir 3; appoint 6; assist 36; open 2; lamngokcseusthk 3; fangzhen 3; 麥鑑榮 2; pascaleusthk 3; project 2; research 11; lin 3; 鄭光廷 2; huamincseusthk 3; view 2; 20190327 1; school 2; cheung 3; jameskcseusthk 3; liu 3; shencseusthk 3; wood 3; 张正友 2; 吳德愷 2; 8328 2; us 4; rm6548 2; 7011 2; 7013 2; 7012 2; 7015 2; last 1; 7014 2; wong 3; 7017 2; 7016 2; qiang 3; rm6530 2; name 2; horner 3; 7009 2; 馮雁 2; 7021 2; 7028 2; kim 3; 7020 2; 張連文 2; peopl 2; comput 36; 彭卲邦 2; admis 2; 宋陽秋 2; arya 3; sunghun 3; makcseusthk 3; ting 3; 7019 2; 7018 2; wu 3; wai 3; 郭天佑 2; muppala 3; associ 51; flincseusthk 3; sunil 3; center 2; cindi 3; graduat 2; drhuileigmailcom 3; earli 2; knowledg 19; leung 3; 陳雷 2; shuaiwcseusthk 3; weiwacseusthk 3; fung 3; yang 3; 張宇 2; employ 1; 34692796 2; program 16; taiclcseusthk 3; yi 3; chiewlan 3; yuzhangcsecseusthk 3; dimitriscseusthk 3; technologi 2; yu 3; 錢大康 2; 鍾志成 2; 7058 2; lzhangcseusthk 3; 楊思聰 2; dleecseusthk 3; qiong 3; 楊强 2; rossitercseusthk 3; humancomput 19; engin 27; schengcseusthk 3; educ 6; pascal 3; 許彬 2; siuw 3; alumni 3; dipapadocseusthk 3; 李波 2; wei 3; event 2; cqfcseusthk 3; kwtleungcseusthk 3; more 1; engg 1; chair 12; facebook 2; prog 1; syst 1; chat 3; fredcseusthk 3; chan 9; quick 1; data 19; lionel 3; 戴秋蘭 2; hornercseusthk 3; tcpongcseusthk 3; rossit 3; enrich 2; depart 1; xin 3; tai 6; tao 3; 沈志汶 2; profil 1; 羅大偉 2; emeritu 24; 鄭紹榮 2; recruit 2; 丁存生 2; blicseusthk 3; navig 2; job 3; shuenghan 3; scienc 13; mxjcseusthk 3; link 1; vincent 3; linkedin 2; pong 3; 林方真 2; chung 3; network 23; dityan 3; albert 3; 王威 2; hunkimcseusthk 3; 陳繁昌 2; david 3; chen 9; facil 2; follow 2; tonyfchanusthk 3; 林岳 2; qianzhcseusthk 3; frederick 3; 王帥 2; cheng 6; qyangcseusthk 3; raywongcseusthk 3; hamdi 3; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -1713,8 +1713,8 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Postgraduate Students | HKUST CSE
 https://www.cse.ust.hk/admin/people/pg
-Saturday, March 30, 2019, 31606
-inform 1; upload 2; luo 2; about 5; academ 3; instagram 2; lifehkust 1; jae 1; shiwei 1; ywangci 1; these 1; dliuae 1; lei 1; zheng 2; niu 1; zeng 3; wehong 1; you 1; xiaopeng 1; undergradu 5; ymingaa 1; szhengac 1; zluoag 1; ywangbi 1; kong 2; mission 2; wang 4; yhara 1; az 1; privaci 2; qualiti 2; fact 2; libin 1; sun 2; dsuna 1; mtwongaf 1; result 1; search 1; abishek 1; hkust 3; direc 1; jobshkust 1; peng 1; email 2; ming 1; yao 3; mingfei 1; yan 1; yaq 1; ymaai 1; staff 3; right 2; shuai 1; the 2; fast 2; kwon 1; 20190330 1; open 2; javad 1; reserv 2; project 2; ywanggq 1; research 8; zpengab 1; xueyang 1; zengqiang 1; jbkim 1; xyueaa 1; postgradu 11; school 2; contact 5; won 1; hao 1; wlib 1; liu 2; hyunjung 1; us 4; area 2; kwak 1; last 1; yyaoag 1; xyouaa 1; wong 1; zhourong 1; vision 2; shi 1; name 1; faculti 4; sabyasachi 1; inasu 1; young 1; jgc 1; xwuba 1; yue 2; yishuo 1; puri 1; univers 3; llibb 1; kim 1; peopl 2; comput 2; admis 2; yun 1; load 1; kit 1; lzhengab 1; ting 1; hara 1; lelausen 1; seeker 1; shichao 1; wu 3; chamani 1; zixin 1; center 2; yuxiang 1; graduat 2; earli 2; awuac 1; agre 1; zhe 1; publish 2; employ 1; anand 1; copyright 2; program 1; sqiuac 1; zhang 2; xiaotian 1; aicaa 1; hkwak 1; slicd 1; yzhanggd 1; zchenbb 1; technologi 2; saumya 1; wenchao 1; gaoxiong 1; lipeng 1; xuanwu 1; hong 3; shuang 1; mphil 5; zime 1; engin 2; yluoav 1; yuki 1; librari 1; yzhanghw 1; youtub 2; alumni 3; hxinaa 1; assur 2; dongyu 1; apuri 1; zniu 1; qshiaa 1; man 1; event 2; qiu 1; map 1; ghareh 1; yiq 1; meng 1; lausen 1; more 1; xliucr 1; facebook 2; qingkai 1; lwangai 1; phd 47; url 1; placem 2; serkan 1; li 5; yushan 1; skumyol 1; quick 1; dae 1; boum 1; shen 1; lab 2; xia 1; ma 1; zzenga 1; enrich 2; lam 1; depart 1; net 1; xin 2; sitemap 2; all 2; new 3; profil 1; mxiaag 1; tshenaa 1; dong 1; msunag 1; welcom 2; tianwei 1; recruit 2; person 1; zhenhui 1; eui 1; updat 1; navig 2; job 3; scienc 2; no 1; student 4; link 2; kumyol 1; zyanad 1; linkedin 2; yzengal 1; xlibo 1; elia 1; chittilappilli 1; yilei 1; ziqian 1; chen 1; facil 2; aoyu 1; abadhan 2; zwual 1; follow 2; yung 1; leonard 1; cse 3; slibc 1; pg 4; kylambd 1; ydkwon 1; 
+Sunday, March 31, 2019, 31606
+inform 1; upload 2; luo 2; about 5; academ 3; instagram 2; lifehkust 1; jae 1; shiwei 1; ywangci 1; these 1; dliuae 1; lei 1; zheng 2; niu 1; zeng 3; wehong 1; you 1; xiaopeng 1; undergradu 5; ymingaa 1; szhengac 1; zluoag 1; ywangbi 1; kong 2; mission 2; wang 4; yhara 1; az 1; privaci 2; qualiti 2; fact 2; libin 1; sun 2; dsuna 1; mtwongaf 1; result 1; search 1; abishek 1; hkust 3; direc 1; jobshkust 1; peng 1; email 2; ming 1; yao 3; mingfei 1; yan 1; yaq 1; ymaai 1; staff 3; right 2; shuai 1; the 2; fast 2; kwon 1; 20190331 1; open 2; javad 1; reserv 2; project 2; ywanggq 1; research 8; zpengab 1; xueyang 1; zengqiang 1; jbkim 1; xyueaa 1; postgradu 11; school 2; contact 5; won 1; hao 1; wlib 1; liu 2; hyunjung 1; us 4; area 2; kwak 1; last 1; yyaoag 1; xyouaa 1; wong 1; zhourong 1; vision 2; shi 1; name 1; faculti 4; sabyasachi 1; inasu 1; young 1; jgc 1; xwuba 1; yue 2; yishuo 1; puri 1; univers 3; llibb 1; kim 1; peopl 2; comput 2; admis 2; yun 1; load 1; kit 1; lzhengab 1; ting 1; hara 1; lelausen 1; seeker 1; shichao 1; wu 3; chamani 1; zixin 1; center 2; yuxiang 1; graduat 2; earli 2; awuac 1; agre 1; zhe 1; publish 2; employ 1; anand 1; copyright 2; program 1; sqiuac 1; zhang 2; xiaotian 1; aicaa 1; hkwak 1; slicd 1; yzhanggd 1; zchenbb 1; technologi 2; saumya 1; wenchao 1; gaoxiong 1; lipeng 1; xuanwu 1; hong 3; shuang 1; mphil 5; zime 1; engin 2; yluoav 1; yuki 1; librari 1; yzhanghw 1; youtub 2; alumni 3; hxinaa 1; assur 2; dongyu 1; apuri 1; zniu 1; qshiaa 1; man 1; event 2; qiu 1; map 1; ghareh 1; yiq 1; meng 1; lausen 1; more 1; xliucr 1; facebook 2; qingkai 1; lwangai 1; phd 47; url 1; placem 2; serkan 1; li 5; yushan 1; skumyol 1; quick 1; dae 1; boum 1; shen 1; lab 2; xia 1; ma 1; zzenga 1; enrich 2; lam 1; depart 1; net 1; xin 2; sitemap 2; all 2; new 3; profil 1; mxiaag 1; tshenaa 1; dong 1; msunag 1; welcom 2; tianwei 1; recruit 2; person 1; zhenhui 1; eui 1; updat 1; navig 2; job 3; scienc 2; no 1; student 4; link 2; kumyol 1; zyanad 1; linkedin 2; yzengal 1; xlibo 1; elia 1; chittilappilli 1; yilei 1; ziqian 1; chen 1; facil 2; aoyu 1; abadhan 2; zwual 1; follow 2; yung 1; leonard 1; cse 3; slibc 1; pg 4; kylambd 1; ydkwon 1; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
 https://www.ust.hk/lifehkust
@@ -1841,7 +1841,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Staff | HKUST CSE
 https://www.cse.ust.hk/admin/people/staff
-Saturday, March 30, 2019, 38983
+Sunday, March 31, 2019, 38983
 8772 1; 8773 1; lun 1; about 5; py 1; academ 4; instagram 2; lifehkust 1; yintik 1; ted 1; jacquelin 1; 20190121 1; undergradu 5; winni 2; kong 2; mission 2; wang 1; az 1; privaci 2; csdee 1; cspeter 1; wing 2; qualiti 2; 3528 10; sharonchiu 1; extn 4; fact 2; secretari 1; wallacem 1; kevinw 1; domin 2; sh 1; peter 1; 3532 1; hkust 3; sk 1; direc 1; jobshkust 1; email 4; kintak 1; staff 7; right 2; yau 1; cs 1; the 2; fast 2; 3546 3; th 1; cy 1; homepag 1; assist 8; kwok 1; open 2; chiu 1; 7000 2; 7002 2; 7001 1; 7004 1; reserv 2; offic 9; 7003 1; brenda 1; 7006 2; renfrew 1; 7005 1; cstak 1; project 2; research 8; kevin 1; school 2; postgradu 7; contact 4; csbrenda 1; shauna 1; us 4; area 2; ssri 1; hilda 1; last 1; outreach 1; wong 2; develop 1; wwkwong 1; noorliza 1; vision 2; name 4; 7008 1; 7007 1; 7009 1; faculti 4; que 1; 7022 1; 7023 1; 7026 1; 7025 1; univers 3; wc 1; peopl 2; comput 8; choi 1; admis 2; softwar 1; instruc 4; kit 1; seeker 1; wai 2; ww 1; henri 2; associ 5; cswclau 1; 6981 3; center 2; teach 4; graduat 2; technician 2; earli 2; room 4; ying 1; vanessa 1; employ 1; copyright 2; ho 1; yc 1; program 2; assistantsteach 1; daveau 1; yl 2; 4202 8; jimw 1; conni 1; technologi 2; yu 1; 4209 2; isaac 1; csisaac 1; hong 2; system 2; engin 3; librari 1; angela 2; daniellau 1; dalton 2; youtub 2; alumni 3; assur 2; betti 2; ka 2; mak 1; noor 1; man 1; event 2; map 1; cslili 1; csyckwok 1; yiu 1; more 1; kwong 1; facebook 2; phd 1; placem 2; 8834 2; chan 3; 8839 5; sharon 1; quick 1; lo 2; lmkia 1; lili 1; lab 2; ly 1; shek 1; nickoshek 1; ma 1; hiu 1; lai 1; enrich 2; lam 1; commun 5; depart 1; net 1; sitemap 2; administr 2; all 2; new 3; lau 3; tam 1; profil 1; tutor 5; daniel 1; welcom 2; recruit 2; cslukelo 1; updat 1; navig 2; position 4; job 3; scienc 2; websit 1; tse 1; link 1; vincent 1; linkedin 2; tung 1; jacquelinec 1; chung 1; kai 1; execut 3; department 1; spaeth 2; facil 2; vincentchoi 1; cshilda 1; follow 2; clerk 5; cse 3; 2532 5; pg 2; visit 2; pm 1; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -1949,7 +1949,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Job Openings | HKUST CSE
 https://www.cse.ust.hk/admin/recruitment
-Saturday, March 30, 2019, 22872
+Sunday, March 31, 2019, 22872
 employ 1; quick 1; copyright 2; reserv 2; 20181215 1; about 5; project 3; academ 3; instagram 2; lifehkust 1; lab 2; research 8; 20190327 1; school 2; postgradu 7; contact 4; enrich 2; technologi 2; depart 1; net 1; us 4; sitemap 2; area 2; all 2; new 3; undergradu 5; last 1; profil 1; it 1; manag 1; 20190318 1; kong 3; hong 3; welcom 2; vision 2; mission 2; recruit 2; az 1; updat 1; privaci 2; navig 2; position 1; job 5; faculti 6; qualiti 2; scienc 2; engin 2; other 1; virtual 1; librari 1; fact 2; link 1; linkedin 2; univers 4; peopl 2; youtub 2; alumni 3; comput 2; assur 2; admis 2; search 1; hkust 3; direc 1; jobshkust 1; seeker 1; event 2; map 1; facil 2; deadlin 2; more 1; center 2; facebook 2; staff 3; graduat 2; right 2; follow 2; earli 2; the 2; fast 2; cse 3; pg 2; placem 2; assist 1; open 4; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -2047,7 +2047,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Site Search | HKUST CSE
 https://www.cse.ust.hk/admin/search
-Saturday, March 30, 2019, 22608
+Sunday, March 31, 2019, 22608
 employ 1; quick 1; copyright 2; reserv 2; about 5; project 2; academ 3; instagram 2; lifehkust 1; lab 2; research 8; school 2; postgradu 7; contact 4; enrich 2; technologi 2; depart 1; net 1; us 4; sitemap 2; area 2; all 2; new 3; undergradu 5; 20180315 1; last 1; profil 1; kong 2; hong 2; welcom 2; vision 2; mission 2; recruit 2; az 1; updat 1; privaci 2; job 3; faculti 4; qualiti 2; scienc 2; engin 2; librari 1; fact 2; link 1; linkedin 2; univers 3; peopl 2; youtub 2; alumni 3; comput 2; search 2; assur 2; admis 2; hkust 3; direc 1; jobshkust 1; seeker 1; event 2; map 1; facil 2; more 1; center 2; facebook 2; staff 3; graduat 2; right 2; follow 2; earli 2; the 2; site 2; fast 2; cse 3; pg 2; placem 2; open 2; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -2143,7 +2143,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Welcome from Acting Head of Department | HKUST CSE
 https://www.cse.ust.hk/admin/welcome
-Saturday, March 30, 2019, 24825
+Sunday, March 31, 2019, 24825
 employ 2; parent 1; sourc 1; copyright 2; maintain 1; about 5; academ 3; program 2; your 1; instagram 2; lifehkust 1; behalf 1; 20181010 1; techniqu 1; these 1; beng 2; mathemat 1; electron 1; broad 1; technologi 4; rang 1; you 1; colleagu 1; undergradu 7; goal 1; version 1; sugges 1; kong 3; hong 3; statem 1; mission 3; bsc 2; 800 1; studentcent 1; az 1; privaci 2; math 1; drive 1; jointli 2; qualiti 2; recogn 1; engin 5; librari 1; fact 2; our 2; youtub 2; alumni 4; assur 2; found 1; sphere 1; web 1; mscbdt 1; 1991 1; hkust 5; member 1; direc 1; jobshkust 1; grown 1; event 2; map 1; popular 1; mscit 1; more 1; roughli 1; facebook 2; staff 5; right 2; prof 1; excel 1; the 2; help 1; site 1; fast 2; 300 1; essenti 1; placem 2; principl 1; advanc 1; open 2; quick 1; data 1; reserv 2; project 2; lab 2; research 10; act 4; school 2; postgradu 8; whether 1; contact 4; enrich 2; 50 1; depart 11; net 1; us 4; ec 1; sitemap 2; area 2; all 2; new 3; brows 1; chines 1; last 1; profil 1; researchori 1; level 1; tool 1; welcom 6; vision 3; professor 1; recruit 2; updat 1; yeung 2; navig 2; job 3; support 1; embodi 1; faculti 6; scienc 7; some 1; student 5; scientist 1; link 1; linkedin 2; univers 4; we 3; peopl 2; head 4; comput 8; admis 2; dityan 2; nearli 1; now 1; seeker 1; department 1; human 1; provid 2; hear 1; encourag 1; choic 1; facil 2; move 1; wide 1; center 2; endeavor 1; administ 2; graduat 2; follow 2; earli 2; cse 5; pg 2; numer 1; there 1; disciplin 1; comment 1; time 1; excit 1; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -2276,7 +2276,7 @@ https://www.cse.ust.hk/News/BDWorkshop2015
 ------------------------------------------------------------------------------
 Postgraduate Programs | HKUST CSE
 https://www.cse.ust.hk/pg
-Saturday, March 30, 2019, 24715
+Sunday, March 31, 2019, 24715
 employ 1; big 1; copyright 2; inform 1; catalog 2; about 5; program 10; academ 3; instagram 2; lifehkust 1; yi 1; faq 1; technologi 4; coordin 1; comp 1; undergradu 5; gener 1; cours 1; kong 2; hong 2; mission 2; az 1; privaci 2; philosophi 2; mphil 1; qualiti 2; engin 2; librari 1; fact 2; enquiri 1; youtub 2; alumni 3; assur 2; mscbdt 2; hkust 3; direc 1; jobshkust 1; ke 1; event 2; map 1; more 1; facebook 2; staff 3; right 2; phd 1; the 2; fast 2; taught 1; placem 2; msc 2; open 2; quick 1; data 1; reserv 2; project 2; lab 2; research 9; dr 1; postgradu 9; school 2; contact 4; enrich 2; depart 1; net 1; us 4; sitemap 2; area 2; all 2; new 4; last 1; profil 1; list 1; welcom 2; vision 2; recruit 2; updat 1; navig 2; job 3; faculti 4; scienc 4; 20180901 1; student 1; link 1; linkedin 2; univers 3; peopl 2; comput 2; admis 2; seeker 1; facil 2; center 2; graduat 2; follow 2; earli 2; master 3; doctor 1; cse 3; pg 5; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -2380,7 +2380,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Undergraduate Programs | HKUST CSE
 https://www.cse.ust.hk/ug
-Saturday, March 30, 2019, 28346
+Sunday, March 31, 2019, 28346
 reason 1; arro 1; inform 1; about 5; intellig 1; academ 3; complet 2; instagram 2; lifehkust 1; offer 3; flexibl 2; qifeng 1; coordin 1; addition 2; bba 2; undergradu 9; descrip 2; gener 3; 18 1; cours 5; kong 3; mission 2; bsc 3; includ 1; 4 1; az 1; declar 2; privaci 2; detail 1; qualiti 2; 3528 1; fact 2; enquiri 1; pursu 1; announc 1; dual 1; hkust 5; direc 1; jobshkust 1; term 1; machin 1; deadlin 2; learn 1; staff 3; launch 2; right 2; the 3; fast 2; bdt 1; googl 1; to 1; open 2; typic 1; thu 1; joint 2; reserv 2; offic 1; atten 1; project 2; itsc 1; research 10; dr 2; wish 1; spring 1; rr37 1; ug 2; 20190328 1; school 2; postgradu 7; contact 4; pai 1; us 4; higherlevel 1; area 3; cogbm 1; cater 1; last 1; laboratori 1; count 1; list 2; vision 2; faculti 5; allow 1; cpgbm 1; submit 1; doublemajor 1; for 4; admin 1; univers 3; peopl 2; comput 9; admis 2; seeker 1; hard 1; interdisciplinari 1; center 2; graduat 3; earli 2; apcsc 1; special 1; with 1; 2019 1; 2018 1; form 1; refer 2; risk 1; nonit 1; withdraw 1; employ 1; registr 1; big 1; individu 1; copyright 2; degre 3; program 22; beng 4; broad 1; technologi 6; comp 3; applic 2; inten 1; work 1; index 1; it 2; manag 4; hong 3; engin 5; educ 1; librari 1; enrol 2; copi 1; requir 5; login 1; mondai 1; youtub 2; alumni 3; assur 2; web 1; event 2; map 1; variou 1; independ 1; more 2; facebook 2; dsct 1; site 1; placem 2; first 1; gga 1; quick 1; cognit 1; data 2; minor 11; receiv 1; pleas 2; honor 1; lab 2; cosc 2; major 3; enrich 2; depart 5; net 1; credit 1; sitemap 2; all 4; new 4; profil 1; below 1; xiaoi 1; welcom 2; core 1; recruit 2; 12nn 1; effect 1; updat 1; navig 2; job 3; noncs 1; scienc 8; 201819 1; procedur 1; student 7; busi 3; link 2; schedul 1; linkedin 2; award 1; calcul 1; pedro 1; februari 1; cre 1; provid 1; fulfil 1; chen 1; facil 2; cpeg 1; follow 2; cse 4; sander 1; pg 2; rmbi 1; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -2498,7 +2498,7 @@ https://www.ust.hk
 ------------------------------------------------------------------------------
 Internship and Graduate Jobs - Information for Employers | HKUST CSE
 https://www.cse.ust.hk/ug/internship/forEmployer
-Saturday, March 30, 2019, 30243
+Sunday, March 31, 2019, 30243
 reason 1; mentor 2; inform 7; supervi 1; depend 1; potenti 1; year 3; about 5; academ 4; complet 1; bai 2; instagram 2; lifehkust 1; via 1; offer 6; jan 1; record 2; nonfin 1; 12 1; undergradu 5; serv 2; ad 1; august 2; 15 1; gener 3; agreem 1; kong 6; exam 1; 1 2; mission 2; 2 2; 3 2; 4 1; az 1; privaci 2; detail 2; qualiti 2; besid 1; fact 2; 29 1; enquiri 2; recommend 1; durat 1; 130 1; how 2; found 1; taken 1; hkust 5; direc 1; jobshkust 1; industri 3; term 3; 30 1; email 3; broaden 1; intern 2; learn 1; docum 1; staff 3; right 2; march 1; docx 1; andor 1; the 8; confirm 1; fast 2; june 4; kwok 1; salari 1; open 2; discuss 2; chiu 1; reserv 2; offic 1; project 2; advic 1; whatev 1; research 8; parti 1; spring 2; guidanc 1; post 4; school 2; postgradu 7; contact 8; talk 4; 20190320 1; advis 1; us 4; train 8; area 2; eg 1; 20182019 1; last 3; examin 2; develop 1; lack 1; vision 2; 1029 1; month 2; name 1; final 3; superv 1; support 1; faculti 4; allow 1; import 2; submit 1; for 2; clash 1; compani 11; univers 5; we 2; peopl 2; miss 1; comput 6; kowloon 2; admis 2; skill 1; seeker 1; tinyau 1; collabor 1; center 4; start 4; perform 1; duti 1; graduat 6; commenc 1; earliest 1; earli 2; horizon 1; oneyear 7; form 2; refer 4; numer 1; well 1; time 3; avoid 1; assign 2; employ 7; career 6; expert 1; copyright 2; 1year 1; program 2; type 1; april 2; review 1; action 1; technologi 4; if 5; plan 1; applic 1; period 4; contract 1; termin 3; it 4; manag 1; hong 6; itself 1; studi 1; toward 1; futur 2; opportun 1; nontechn 1; jame 1; engin 6; librari 1; copi 1; requir 1; summer 8; youtub 2; alumni 3; assur 2; mai 4; get 2; event 3; map 1; nourish 1; coop 1; break 1; more 1; facebook 2; chairman 1; suggest 1; appropri 1; help 1; expect 1; assess 1; placem 2; relev 2; computerrel 1; internship 23; date 2; sharon 1; quick 1; receiv 1; pleas 4; sign 1; separ 1; lab 2; directli 1; while 1; dai 1; download 1; solution 1; conveni 1; enrich 2; depart 9; net 1; sitemap 2; all 2; new 3; profil 1; kind 1; todai 1; format 1; sent 1; water 2; welcom 3; professor 1; collec 1; recruit 2; updat 1; guidelin 3; position 1; job 15; scienc 8; note 1; request 2; week 1; student 14; link 1; linkedin 2; respons 1; execut 1; arrang 4; provid 4; make 2; encourag 1; facil 2; technic 2; clear 2; follow 3; highli 1; emploi 1; committe 1; cse 4; pg 2; disciplin 1; respond 1; 
 https://www.ust.hk/news
 https://www.ust.hk/academics/list
@@ -2607,7 +2607,7 @@ Thursday, September 15, 2016, 440
 ------------------------------------------------------------------------------
 HKUST - Hong Kong University of Science and Technology
 https://www.ust.hk
-Saturday, March 30, 2019, 174813
+Sunday, March 31, 2019, 174813
 cluster 1; inform 7; cultur 4; govern 4; year 3; maintain 1; about 9; institu 6; academ 10; lifehkust 3; environ 3; cover 1; pangu 1; gridheight768768750510 1; strateg 3; rank 3; state 1; press 2; brand 1; subsidiari 1; undergradu 15; solid 1; distinguish 1; simplifyalloff 1; ag 1; agreem 1; court 4; nextslideonwindowfocusoff 1; cours 3; an 1; kong 2; senior 4; mission 1; rd 1; 2 1; includ 1; highest 2; stanford 1; privaci 1; boost 1; organ 3; dean 3; reallif 1; fact 1; access 1; engag 3; global 12; kei 1; long 1; polici 2; how 1; current 3; search 1; releas 2; hkust 38; direc 1; jobshkust 1; regul 1; resourc 3; calendar 6; a 17; art 3; vice 1; intern 7; address 1; learn 13; photo 1; staff 4; launch 1; innov 5; figur 1; stori 5; the 1; errormessag 3; googl 1; remov 1; jqueryslideridshowhtmlerrormessag 1; x 1; pharma 1; biographi 1; to 1; chart 3; novel 1; london 1; offic 61; good 4; research 40; closeknit 3; hidecaptionatlimit0 1; provost 6; ug 3; disablefocuslistenerfals 1; postgradu 12; school 11; scholarship 6; rare 1; contact 1; club 4; discov 1; us 1; atyr 1; doubl 1; cater 1; test 1; disableprogressbaron 1; laboratori 1; develop 12; diseas 3; scholar 1; mainland 10; integr 1; vision 1; success 3; investig 1; activ 3; 繁體 1; faculti 7; documentgetelementsbytagnamehead0appendchildhtmldivchildnodes0 3; fok 4; transcrip 1; idea 1; scientist 1; for 2; contribu 2; mileston 1; questionnair 1; video 1; univers 15; life 3; peopl 1; therapeut 1; comput 1; hover 1; admis 3; central 3; human 4; interdisciplinari 1; live 4; lazytypenon 1; presid 6; collabor 4; biopharma 1; spinnerspinner0 1; ledfpd 1; teach 3; center 19; subcontainercsstopmenumegamenuheightpx 1; graduat 2; highperform 1; insur 6; myport 4; ying 4; registri 4; 2019 1; print 1; 2018 1; responsivelevels12401024778480 1; knowledg 4; gz 1; china 13; publish 3; well 3; relat 3; financi 6; debugmodefals 1; foundat 1; directori 4; jockei 4; scholarli 1; career 3; hideallcaptionatlilmit0 1; challeng 1; safeti 3; stoploopoff 1; senat 4; program 19; pioneer 1; three 1; autoheightoff 1; galleri 1; glanc 3; feedback 1; corner 2; technologi 8; text 1; minheight668 1; plan 3; secretariat 3; greater 3; polymeras 1; profession 3; ii 1; give 1; counsel 3; stopafterloops1 1; partnership 3; in 1; gene 1; it 1; manag 4; tough 1; hong 2; lung 2; purchas 3; studi 13; system 3; futur 1; opportun 9; experi 4; explor 1; aid 6; statut 1; recogn 1; engin 1; educ 4; librari 7; croucher 1; jqueryj 1; against 1; coursebas 2; shuffleoff 1; institut 12; our 3; summer 6; smart 2; alumni 9; aesthet 3; shenzhen 1; accur 1; event 2; map 3; more 1; health 3; entrepreneurship 3; lead 1; prospect 3; multimedia 3; site 2; hidethumbsonmobileoff 1; shadow0 1; advanc 8; first 3; receiv 1; menumegamenu 1; tell 4; sign 1; guangzhou 2; vicepresid 11; gridwidth10241024768320 1; lab 1; space 4; drug 1; major 1; find 1; ordin 1; medicin 1; commun 13; affair 3; inspir 1; hideslideratlimit0 1; administr 9; rna 1; profil 3; level 2; stopatslide1 1; neurodegen 1; establish 2; translat 1; colleg 1; servic 14; transfer 3; campu 16; council 4; true 2; ground 1; guidelin 2; visitor 3; job 3; exchang 6; basic 1; present 1; sustain 5; harvard 1; fallback 1; option 1; scienc 3; websit 1; student 37; busi 4; continu 3; medic 1; mental 1; media 8; tung 4; platform 3; network 3; fullwidth 1; highlight 1; transform 1; donor 3; award 8; public 8; hous 3; 简体 1; fight 1; facil 10; financ 3; motion 1; social 1; readi 1; strategi 1; truli 3; fellowship 1; highli 1; connec 6; pg 5; visibilitylevels12401024778480 1; amen 6; visit 8; sport 7; 
 https://www.ust.hk
 https://www.ust.hk/prospective-students
@@ -3041,7 +3041,7 @@ https://www.web-accessibility.hk/en
 ------------------------------------------------------------------------------
 HKUST - About
 https://www.ust.hk/about-hkust
-Saturday, March 30, 2019, 133759
+Sunday, March 31, 2019, 133759
 govern 4; year 3; ident 1; institu 5; academ 11; bai 1; offer 2; shyi 2; these 1; rank 4; 150acr 1; you 1; newslett 8; serv 1; grow 1; intellectu 1; impact 1; pool 1; court 6; cours 2; secur 1; click 1; senior 5; as 2; globe 1; at 1; 3 1; drive 1; elit 1; object 2; organ 4; dean 2; engag 2; ahead 1; enquiri 1; corpor 4; polici 2; search 1; releas 3; aspect 1; hkust 54; direc 4; measur 1; term 1; regul 1; hand 1; sweep 1; a 13; mind 1; address 1; learn 11; photo 3; staff 5; abl 1; figur 5; the 3; thi 1; x 1; thank 1; biographi 2; thrive 1; eager 1; offic 47; itsc 2; extern 1; do 1; good 2; closeknit 2; wise 2; beauti 2; brochur 2; postgradu 9; scholarship 4; contact 1; club 3; area 1; ebookshelf 2; list 1; mainland 7; respect 1; abund 1; integr 1; vision 4; take 1; risen 1; success 2; octob 1; activ 2; 繁體 1; faculti 14; fok 4; fortun 1; origin 1; calib 1; contribu 3; univers 33; kowloon 1; hover 1; sik 2; decor 1; attitud 1; gaug 1; human 5; interdisciplinari 1; live 2; internation 1; collabor 2; societi 1; ledfpd 1; asia 1; subcontainercsstopmenumegamenuheightpx 1; breed 1; home 2; myport 3; ying 4; horizon 1; print 1; environment 2; china 9; form 2; publish 2; well 2; relat 4; foundat 2; directori 7; nurtur 1; scholarli 1; career 2; expert 2; challeng 3; ho 2; channel 2; focus 1; 3000 1; desir 1; approach 1; stipul 1; identifi 1; context 2; ia 2; text 1; join 2; secretariat 2; rapidli 1; creat 1; period 1; partnership 2; in 3; understand 1; manag 5; hong 4; purchas 2; system 2; field 1; experi 2; aid 4; issu 1; statut 4; librari 7; valu 1; natur 1; coursebas 2; pursuit 2; optim 1; booklet 2; institut 10; summer 4; local 2; aesthet 2; world 5; knowledgebas 1; shenzhen 1; share 1; stand 1; map 6; variou 1; spirit 2; health 2; entrepreneurship 2; draw 1; prospect 2; multimedia 5; regard 1; report 4; societ 2; menumegamenu 1; feel 1; amongst 1; find 3; ordin 4; relentless 1; commun 13; administr 10; citizen 1; new 2; immers 1; level 2; mr 4; aspir 1; establish 2; genesi 2; welcom 4; servic 11; unit 2; true 1; try 2; bodi 1; websit 1; student 35; busi 6; media 10; fullwidth 1; matur 1; transform 1; energ 1; hous 2; and 1; dynam 3; recordbreak 1; financ 2; social 1; endeavor 1; strategi 1; dedic 1; highli 1; comprehens 1; pg 7; offici 1; amen 7; 60hectar 1; cando 1; sport 5; cluster 1; inform 8; powerhous 1; cultur 4; about 10; commit 2; led 2; lifehkust 2; environ 3; conduc 1; cover 1; reflect 1; strateg 4; annual 2; state 1; press 3; recent 1; onlin 1; brand 1; undergradu 11; gener 1; kong 4; mission 4; rd 1; highest 2; privaci 1; overse 1; sincer 1; minut 1; fact 5; access 1; global 10; kei 1; current 3; jobshkust 1; 30 1; creation 1; resourc 2; calendar 4; art 2; intern 7; innov 4; team 1; stori 2; closer 1; peninsula 1; googl 1; afraid 1; oper 1; to 2; chart 4; prepar 1; arena 1; research 30; provost 5; ug 3; view 1; structur 2; school 13; passion 1; five 2; us 2; cater 1; laboratori 1; worldclass 1; develop 12; look 1; occupi 1; name 2; vp 1; region 3; support 2; sinc 1; allow 1; attract 1; mileston 3; questionnair 1; video 3; life 2; we 7; peopl 2; admis 2; central 3; ting 2; presid 9; overview 1; wide 1; teach 3; center 15; globallyori 1; emphasi 1; graduat 2; insur 4; registri 3; knowledg 3; chang 1; short 1; financi 4; time 2; jockei 3; base 1; individu 2; safeti 4; senat 6; program 13; beyond 1; entrepreneuri 1; galleri 2; glanc 4; feedback 1; critic 1; technologi 8; prioriti 1; plan 4; greater 2; profession 3; give 1; counsel 2; multipl 1; fail 1; studi 10; among 1; opportun 9; explor 2; researchhkust 2; recogn 1; engin 3; educ 7; frontrunn 1; our 4; gain 1; alumni 8; 1991 2; wei 2; statist 1; event 1; meant 1; stakehold 1; outcom 1; prof 1; lead 2; excel 3; help 2; site 3; foster 1; devotion 1; advanc 6; first 2; tell 2; vicepresid 8; space 5; major 2; divers 2; talent 2; affair 2; constantli 1; depart 1; proud 1; profil 4; employe 1; water 1; keen 1; transfer 2; openminded 1; campu 18; veteran 1; council 6; guidelin 2; visitor 4; job 3; exchang 4; sustain 2; achiev 1; scienc 5; here 1; note 2; link 1; continu 2; tung 4; platform 2; network 2; strive 1; east 1; donor 2; award 13; public 10; satisfi 1; messag 1; 简体 1; provid 3; facil 7; motion 3; readi 1; wellb 1; clear 1; truli 2; connec 4; visit 8; 
 https://www.ust.hk
 https://www.ust.hk/prospective-students
@@ -3436,7 +3436,7 @@ https://www.web-accessibility.hk/en
 ------------------------------------------------------------------------------
 Department List - HKUST
 https://www.ust.hk/academics/list
-Saturday, March 30, 2019, 108260
+Sunday, March 31, 2019, 108260
 cluster 1; inform 5; cultur 2; govern 2; year 2; about 6; institu 4; academ 9; lifehkust 2; environ 2; strateg 2; rank 2; state 1; press 1; brand 1; undergradu 11; court 3; cours 2; senior 2; mission 1; rd 1; highest 2; privaci 1; organ 2; dean 2; fact 1; access 1; engag 2; global 8; kei 1; polici 2; current 2; search 1; releas 1; hkust 24; direc 1; jobshkust 1; regul 1; resourc 2; calendar 4; a 12; art 2; intern 5; learn 8; staff 2; innov 1; figur 1; stori 2; googl 1; x 1; chart 2; offic 41; good 2; research 27; closeknit 2; provost 4; ug 3; postgradu 9; school 8; scholarship 4; contact 1; club 3; us 1; cater 1; laboratori 1; develop 8; list 3; mainland 7; integr 1; vision 1; success 2; activ 2; 繁體 1; faculti 5; fok 4; contribu 2; mileston 1; questionnair 1; univers 8; life 2; peopl 1; hover 1; admis 2; central 2; human 3; interdisciplinari 1; live 2; presid 2; collabor 2; ledfpd 1; teach 2; center 13; subcontainercsstopmenumegamenuheightpx 1; graduat 2; home 1; insur 4; myport 3; ying 4; registri 3; print 1; knowledg 2; china 9; publish 2; well 2; relat 2; financi 4; directori 2; jockei 3; scholarli 1; career 2; safeti 2; senat 3; program 13; glanc 2; feedback 1; text 1; technologi 5; plan 2; secretariat 2; greater 2; profession 2; give 1; counsel 2; partnership 2; manag 3; purchas 2; studi 9; system 2; opportun 6; experi 2; explor 1; aid 4; statut 1; engin 1; educ 3; librari 5; coursebas 2; institut 10; our 2; summer 4; alumni 6; aesthet 2; shenzhen 1; event 1; map 3; health 2; entrepreneurship 2; prospect 2; multimedia 2; site 2; advanc 5; first 2; menumegamenu 1; tell 2; vicepresid 8; space 3; ordin 1; commun 9; affair 2; depart 3; administr 6; profil 2; level 2; servic 9; transfer 2; campu 10; council 3; true 1; guidelin 2; visitor 2; job 2; exchang 4; sustain 2; scienc 2; websit 1; student 26; busi 3; continu 2; media 5; tung 4; platform 2; network 2; fullwidth 1; donor 2; award 5; public 6; hous 2; 简体 1; facil 7; financ 2; motion 1; social 1; strategi 1; truli 2; connec 4; pg 5; amen 5; visit 7; sport 5; 
 https://www.ust.hk
 https://www.ust.hk/prospective-students
@@ -3737,7 +3737,7 @@ https://www.web-accessibility.hk/en
 ------------------------------------------------------------------------------
 HKUST - Life@HKUST
 https://www.ust.hk/lifehkust
-Saturday, March 30, 2019, 128167
+Sunday, March 31, 2019, 128167
 govern 2; year 5; offcampu 1; hall 1; institu 4; tenni 1; academ 11; your 2; offer 1; rank 2; accommod 2; you 3; grow 1; intellectu 1; pool 1; court 4; cours 3; an 1; senior 3; extend 1; at 2; 8 1; handl 1; organ 5; dean 2; turf 1; engag 5; pursu 2; civic 2; polici 2; search 2; releas 1; hkust 40; direc 1; measur 1; regul 1; a 16; mind 1; learn 15; staff 4; figur 1; the 6; meet 1; x 1; goe 2; demonstr 1; eager 1; curricular 1; offic 43; contribut 1; itsc 1; good 4; closeknit 2; aircondi 1; postgradu 9; scholarship 7; contact 1; club 3; brows 1; parcel 1; need 1; mainland 8; integr 3; vision 1; take 1; success 4; activ 8; sho 2; 繁體 1; faculti 6; fok 4; contribu 2; univers 15; energet 1; burden 1; hover 1; fy 1; await 2; promot 2; human 3; interdisciplinari 1; live 6; collabor 3; ledfpd 1; subcontainercsstopmenumegamenuheightpx 1; go 2; rich 1; tuition 1; treasur 2; home 3; myport 6; special 1; ying 4; horizon 1; print 2; incep 1; togeth 1; china 9; form 2; publish 2; there 2; well 3; relat 4; selec 1; directori 2; promotion 1; scholarli 1; career 5; sensit 1; challeng 1; artifici 1; text 1; join 3; pitch 2; portal 1; secretariat 2; if 1; creat 1; partnership 3; understand 1; classroom 1; manag 4; purchas 2; system 2; experi 8; characterist 1; introductori 1; aid 5; begin 1; statut 1; wider 1; librari 8; coursebas 2; institut 10; matter 2; login 1; believ 1; summer 8; local 1; valid 1; aesthet 4; world 1; have 1; member 1; shenzhen 1; share 1; tradition 1; map 3; nourish 1; variou 1; avail 2; themselv 1; health 3; entrepreneurship 2; cocurricular 1; prospect 2; multimedia 3; menumegamenu 1; nervewreck 1; conveni 3; ordin 1; commun 17; plenti 1; experienti 1; universitylevel 1; administr 6; read 1; level 2; uniqu 1; welcom 1; servic 13; true 1; hardsurfac 1; websit 1; student 59; busi 3; cornerston 1; media 5; schedul 1; respons 1; fullwidth 1; total 2; transform 1; hous 6; design 2; involv 1; make 1; lane 1; encourag 1; abroad 1; frontier 1; financ 2; social 1; strategi 1; dedic 1; outdoor 1; pg 5; amen 9; sport 11; cluster 1; inform 7; cultur 5; about 6; cuttingedg 1; lifehkust 5; wellround 1; environ 3; enhanc 2; reflect 1; strateg 2; friend 2; state 1; press 1; onlin 1; brand 1; secondari 1; vibrant 3; undergradu 14; august 1; therebi 1; varieti 4; onestop 1; each 1; crosscultur 1; mission 1; rd 1; includ 1; highest 2; creativ 1; privaci 1; qualiti 1; fact 1; access 1; global 12; stimul 1; seek 1; kei 1; current 2; jobshkust 1; resourc 6; broaden 1; emphas 1; calendar 6; art 4; intern 7; innov 1; stori 5; face 1; googl 1; assist 4; oper 1; chart 2; friendship 2; prepar 2; research 32; provost 4; ug 3; view 2; school 9; discov 2; us 2; cater 3; laboratori 2; worldclass 1; develop 15; oncampu 1; support 2; physic 1; recreat 1; swim 1; delici 1; defer 1; shop 1; import 1; idea 1; sponsorship 1; mileston 1; awar 2; questionnair 1; multifacet 2; life 10; we 1; peopl 1; outsid 1; admis 2; not 1; central 2; common 1; throughout 1; presid 2; enabl 1; green 1; wide 2; healthi 2; teach 2; center 14; exposur 1; graduat 2; insur 7; registri 3; knowledg 5; what 1; refer 1; deepen 1; financi 7; excit 4; jockei 3; leader 1; individu 1; sourc 1; safeti 2; senat 3; program 22; rent 1; beyond 3; glanc 2; feedback 1; electron 1; technologi 5; plan 4; greater 2; profession 2; give 1; counsel 5; insight 1; studi 15; opportun 11; indoor 2; explor 5; intercultur 1; care 1; recogn 1; engin 1; educ 4; henc 1; enjoy 1; requir 1; our 3; alumni 7; eat 1; place 2; event 3; wealth 1; more 1; lifestyl 1; excel 1; help 4; site 2; perspect 1; advanc 7; first 4; residenti 1; tell 4; own 1; fee 1; vicepresid 8; section 1; space 4; minisocc 1; enrich 2; affair 2; inspir 1; development 1; orient 1; profil 2; rais 1; transfer 2; campu 18; collec 1; imagin 1; council 3; friendli 1; person 5; effect 1; enjoi 2; guidelin 2; visitor 2; job 2; exchang 5; sustain 6; scienc 2; here 1; arrai 1; continu 3; tung 4; platform 2; network 3; strive 1; donor 2; award 5; public 6; 400meter 1; signatur 1; 简体 1; track 2; provid 4; benevol 1; facil 12; soccer 1; motion 1; wellb 2; truli 2; connec 4; growth 1; visit 7; user 2; account 1; 
 https://www.ust.hk
 https://www.ust.hk/prospective-students
@@ -4060,7 +4060,7 @@ https://www.web-accessibility.hk/en
 ------------------------------------------------------------------------------
 Map & Directions - HKUST
 https://www.ust.hk/map-directions
-Saturday, March 30, 2019, 108091
+Sunday, March 31, 2019, 108091
 cluster 1; inform 5; cultur 2; govern 2; year 2; about 6; institu 4; academ 8; lifehkust 2; environ 2; strateg 2; rank 2; state 1; press 1; brand 1; undergradu 11; court 3; cours 2; senior 2; mission 1; rd 1; highest 2; privaci 1; organ 2; dean 2; fact 1; access 1; engag 2; global 8; kei 1; polici 2; current 2; search 1; releas 1; hkust 24; direc 4; jobshkust 1; regul 1; resourc 2; calendar 4; a 12; art 2; intern 5; learn 8; staff 2; innov 1; figur 1; stori 2; googl 1; x 1; chart 2; offic 41; good 2; research 27; closeknit 2; provost 4; ug 3; postgradu 9; school 8; scholarship 4; contact 1; club 3; us 1; cater 1; laboratori 1; develop 8; mainland 7; integr 1; vision 1; success 2; activ 2; 繁體 1; faculti 5; fok 4; contribu 2; mileston 1; questionnair 1; univers 8; life 2; peopl 1; hover 1; admis 2; central 2; human 3; interdisciplinari 1; live 2; presid 2; collabor 2; ledfpd 1; teach 2; center 13; subcontainercsstopmenumegamenuheightpx 1; graduat 2; home 1; insur 4; myport 3; ying 4; registri 3; print 1; knowledg 2; china 9; publish 2; well 2; relat 2; financi 4; directori 2; jockei 3; scholarli 1; career 2; safeti 2; senat 3; program 13; glanc 2; feedback 1; text 1; technologi 5; plan 2; secretariat 2; greater 2; profession 2; give 1; counsel 2; partnership 2; manag 3; purchas 2; studi 9; system 2; opportun 6; experi 2; explor 1; aid 4; statut 1; engin 1; educ 3; librari 5; coursebas 2; institut 10; our 2; summer 4; alumni 6; aesthet 2; shenzhen 1; event 1; map 6; health 2; entrepreneurship 2; prospect 2; multimedia 2; site 2; advanc 5; first 2; menumegamenu 1; tell 2; vicepresid 8; space 3; ordin 1; commun 9; affair 2; administr 6; profil 2; level 2; servic 9; transfer 2; campu 10; council 3; true 1; guidelin 2; visitor 2; job 2; exchang 4; sustain 2; scienc 2; websit 1; student 26; busi 3; continu 2; media 5; tung 4; platform 2; network 2; fullwidth 1; donor 2; award 5; public 6; hous 2; 简体 1; facil 7; financ 2; motion 1; social 1; strategi 1; truli 2; connec 4; pg 5; amen 5; visit 7; sport 5; 
 https://www.ust.hk
 https://www.ust.hk/prospective-students
@@ -4360,7 +4360,7 @@ https://www.web-accessibility.hk/en
 ------------------------------------------------------------------------------
 News - HKUST
 https://www.ust.hk/news
-Saturday, March 30, 2019, 120518
+Sunday, March 31, 2019, 120518
 cluster 1; inform 5; cultur 2; govern 2; year 3; nation 1; maintain 1; about 6; institu 4; academ 8; bai 1; lifehkust 2; 2432019 1; environ 2; fix 1; strateg 2; championship 1; rank 2; state 1; press 1; brand 1; you 1; undergradu 11; august 1; ai 1; court 3; cours 2; 意義非凡 1; kong 1; senior 2; 1 1; mission 1; rd 1; 2 1; 3 1; highest 2; 半生鑽研神經傳訊 1; juli 1; privaci 1; 最快一年內完成 1; organ 2; dean 2; fact 1; be 1; access 1; engag 2; global 8; 1932019 1; kei 1; long 1; polici 2; how 1; current 2; search 1; releas 1; hkust 28; direc 1; jobshkust 1; cosmologi 1; regul 1; 現實真相又如何 1; ca 1; resourc 2; calendar 4; a 12; art 2; intern 5; learn 8; 2232019 5; staff 2; 諾獎教授領導研製 1; innov 1; march 1; figur 1; stori 2; fly 1; googl 1; june 1; x 1; 揭致癌因素 1; chart 2; offic 41; ica 1; 加強大灣區科研成果轉化 1; woe 1; good 2; research 28; closeknit 2; astrophys 1; provost 4; ug 3; 2932019 1; postgradu 9; school 8; ambition 1; scholarship 4; 科大研基因轉錄 1; contact 1; club 3; 科大葉玉如為腦退化症尋解藥 1; discov 1; us 1; area 1; chines 1; cater 1; laboratori 1; develop 9; mainland 7; 285 1; integr 1; vision 2; month 1; success 2; 朱葉玉如 1; octob 1; activ 2; 繁體 1; faculti 5; next 1; fok 5; transcrip 1; scientist 2; contribu 2; mileston 1; questionnair 1; univers 8; life 2; peopl 1; comput 2; hover 1; admis 2; central 2; interest 1; now 1; human 3; interdisciplinari 1; live 2; presid 2; collabor 2; ledfpd 1; teach 2; center 13; subcontainercsstopmenumegamenuheightpx 1; go 1; graduat 2; highperform 1; home 1; insur 4; myport 3; ying 5; registri 3; 2019 1; print 1; 2018 1; knowledg 3; china 12; fund 1; publish 2; 探黑洞奧秘 1; well 2; relat 2; financi 4; time 1; directori 2; jockei 3; 獲頒女性諾貝爾獎 1; scholarli 1; career 2; septemb 1; hk 1; safeti 2; senat 3; program 13; april 1; glanc 2; feedback 1; 2025 1; decemb 1; text 1; technologi 5; plan 2; secretariat 2; greater 4; polymeras 1; flow 1; profession 2; ii 1; give 1; counsel 2; partnership 2; 白先勇與劉再復對話紅樓夢讀了它我吃飯睡覺都不一樣了 1; method 1; gene 1; it 1; manag 3; hong 1; purchas 2; studi 9; system 2; opportun 6; experi 2; 科大夥內地科企成立聯合實驗室 1; explor 1; aid 4; statut 1; engin 1; educ 3; librari 5; januari 1; coursebas 2; institut 11; our 2; summer 4; alumni 6; aesthet 2; mai 1; modern 1; top 2; 1832019 1; shenzhen 1; accur 1; camera 1; event 1; map 4; alwai 1; optic 1; health 3; entrepreneurship 2; 電影常用航拍機監視目標 1; 科大新天文攝影機 1; lead 1; academi 1; prospect 2; filter 2; multimedia 2; site 2; 2532019 3; advanc 6; first 3; date 1; menumegamenu 1; 重點發展人工智能 1; tell 2; vicepresid 8; space 3; cloud 1; ordin 1; commun 9; affair 2; titl 1; group 1; administr 6; new 3; contest 1; rna 1; profil 2; level 2; servic 10; transfer 2; campu 10; council 3; true 1; 傑出領袖誕生 1; guidelin 2; visitor 2; job 2; exchang 4; present 1; sustain 2; scienc 3; 2132019 1; websit 1; student 26; busi 3; continu 2; best 1; quantum 1; media 5; tung 5; 2732019 2; novemb 1; platform 2; network 2; fullwidth 1; can 1; donor 2; award 8; public 6; paper 2; hous 2; 2632019 2; februari 1; 简体 1; 2032019 3; on 1; facil 7; financ 2; motion 1; social 1; strategi 1; truli 2; macau 1; highli 1; huawei 1; 20192018201720162015201420132012201120102009200820072006200520042003200220012000 1; connec 4; build 1; pg 5; amen 5; visit 7; sport 5; 
 https://www.ust.hk
 https://www.ust.hk/prospective-students
