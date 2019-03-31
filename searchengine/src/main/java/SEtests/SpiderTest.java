@@ -1,4 +1,4 @@
-package SE;
+package SEtests;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
