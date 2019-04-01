@@ -53,11 +53,11 @@ mvn compile
 To the run the Spider Crawler run:
 
 ```bash
-mvn exec:java -Dexec.mainclass=SE.Crawler
+mvn exec:java -Dexec.mainClass=SE.Crawler
 ```
 
 To run the Spider Test run:
 ```bash
-mvn exec:java -Dexec.mainclass=SEtests.SpiderTest
+mvn exec:java -Dexec.mainClass=SEtests.SpiderTest
 ```
 
