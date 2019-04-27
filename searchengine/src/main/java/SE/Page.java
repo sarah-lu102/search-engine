@@ -2,6 +2,7 @@
 package SE;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -12,6 +13,7 @@ public class Page implements Serializable
 	String lastModifiedDate;
 	int size;
 	ArrayList<String> childLinks;
+	HashSet<String> parentLinks;
 	
 	public Page(String title, String url, String lastModifiedDate, int size, ArrayList<String> childLinks)
 	{
@@ -48,6 +50,14 @@ public class Page implements Serializable
 
 	public ArrayList<String> getChildLinks(){
 		return childLinks;
+	}
+
+	public void setParents(HashSet<String> parents){
+		parentLinks = parents;
+	}
+
+	public HashSet<String> getParentLinks(){
+		return parentLinks;
 	}
 }
 /*Page class only contain simple imformation of a page,

@@ -70,6 +70,11 @@ public class PageContent
         db.remove(Integer.toString(pageID).getBytes());
     } 
 
+    public void updateEntry(int pageID, Page p) throws RocksDBException{
+        byte[] data = SerializationUtils.serialize(p);
+        db.put(Integer.toString(pageID).getBytes(), data);
+    }
+
     public Page getPageContent(int pageID) throws RocksDBException {
         byte[] content = db.get(Integer.toString(pageID).getBytes());
         if(content == null) {
