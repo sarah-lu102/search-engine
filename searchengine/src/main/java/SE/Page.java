@@ -12,17 +12,22 @@ public class Page implements Serializable
 	String url;
 	String lastModifiedDate;
 	int size;
+	int tfmax;
+	double magnitude;
 	ArrayList<String> childLinks;
 	HashSet<String> parentLinks;
 	
-	public Page(String title, String url, String lastModifiedDate, int size, ArrayList<String> childLinks)
+	public Page(String title, String url, String lastModifiedDate, int size, ArrayList<String> childLinks, int tfmax)
 	{
 		this.title = title;
 		this.url = url;
 		this.lastModifiedDate = lastModifiedDate;
 		this.size = size;
 		this.childLinks = childLinks;
+		this.tfmax = tfmax;
 	}
+
+	public void setMagnitude(double magnitude){ this.magnitude = magnitude; }
 
 	public String getModifiedDate(){
 		return lastModifiedDate;

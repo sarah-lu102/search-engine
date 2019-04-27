@@ -146,6 +146,7 @@ public class Crawler {
 
         try{
             bfs();
+            indexer.reweight(30);
             addParents();
             //printParents();
             indexer.printAll();

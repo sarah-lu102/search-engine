@@ -67,14 +67,14 @@ public class Indexer {
 
     }
 
-    public void finalise() {
+    public void finalise(){
         urlToPageID.finalise();
         invertedIndex.close();
         forwardIndex.close();
         wordIDToWord.close();
-        pageInfo.finalise()
+        pageInfo.finalise();
     }
-
+    
     public PageContent getPageContent(){
         return pageInfo;
     }
@@ -94,6 +94,32 @@ public class Indexer {
         String s = getBody(url);
         if(s != null && !s.isEmpty()) return true;
         return false;
+    }
+
+    public void reweight(int N){ //change weights from tf to tfxidf, N=# of documents
+        try {
+            RocksIterator iter = invertedIndex.newIterator();
+            iter.seekToFirst();
+            while (iter.isValid()) {
+                int wordID =  (int)SerializationUtils.deserialize(iter.key());
+                HashMap<Integer, Double> pageIdToTf = (HashMap<Integer, Double>)SerializationUtils.deserialize(iter.value());
+                int df = pageIdToTf.size();
+                for(Map.Entry<Integer, Double> pair : pageIdToTf.entrySet()) {
+                    Page currentPage = pageInfo.getPageContent(pair.getKey());
+                    int tfmax = currentPage.tfmax;
+                    double tf = pair.getValue();
+                    double idf = Math.log(((double)N)/((double)df))/Math.log(2);
+                    double tfidf = tf*idf/((double)tfmax);
+                    pageIdToTf.put(pair.getKey(), tfidf);
+                }
+                invertedIndex.put(iter.key(), SerializationUtils.serialize(pageIdToTf));
+                iter.next();
+            }
+
+            //invertedIndex.close();
+        } catch (RocksDBException rdbe) {
+            rdbe.printStackTrace(System.err);
+        }
     }
 
     public HashMap<Integer, ArrayList<Integer>> extractWordIDs(String url) throws ParserException
@@ -235,11 +261,11 @@ public class Indexer {
         try{
             int pageID = url.hashCode();
             //int pageID = urlToPageID.getSize();
-            
+            int tfmax = indexWords(url);
             if(urlToPageID.addEntry(url, pageID)){ //if new then need to store rest of infomation
                 //pageIDs++;
                 Page new_page;
-                new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url));
+                new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url), tfmax);
                 pageInfo.addEntry(pageID, new_page);
             } else { //if false then need to check date
                 Page curr_page = pageInfo.getPageContent(pageID);
@@ -252,7 +278,7 @@ public class Indexer {
                     System.out.println("Updating Page");
                     pageInfo.delEntry(pageID);
                     Page new_page;
-                    new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url));
+                    new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url), tfmax);
                     pageInfo.addEntry(pageID, new_page);
                 }
             }
@@ -260,34 +286,35 @@ public class Indexer {
             System.out.println("Exception Caught");
         }
 
-        indexWords(url);
     }
 
-    public void indexWords(String url){
+    public int indexWords(String url){
         int pageID = url.hashCode();
 
         try{
             HashMap<Integer, ArrayList<Integer>> words = extractWordIDs(url);
             forwardIndex.put(SerializationUtils.serialize(pageID), SerializationUtils.serialize(words));
 
+            int maxTf = 0;
             for(Map.Entry<Integer, ArrayList<Integer>> pair : words.entrySet()) {
                 int id = pair.getKey();
 
                 byte[] invertedEntryBytes = invertedIndex.get(SerializationUtils.serialize(id));
-                HashSet<Integer> invertedEntry = new HashSet<Integer>();
+                HashMap<Integer, Double> invertedEntry = new HashMap<>();
                 if(invertedEntryBytes!=null){
-                    invertedEntry = (HashSet<Integer>)SerializationUtils.deserialize(invertedEntryBytes);
+                    invertedEntry = (HashMap<Integer, Double>)SerializationUtils.deserialize(invertedEntryBytes);
                 }
 
-                if (!invertedEntry.contains(pageID)) {
-                    invertedEntry.add(pageID);
-                }
-
+                int count = pair.getValue().size();
+                invertedEntry.put(pageID, (double)count);
                 invertedIndex.put(SerializationUtils.serialize(id), SerializationUtils.serialize(invertedEntry));
 
+                if(count>maxTf){
+                    maxTf = count;
+                }
             }
 
-
+            return maxTf;
 
 
         }catch(ParserException e){
@@ -295,7 +322,7 @@ public class Indexer {
         }catch(RocksDBException e){
             System.out.print("RocksDBException while indexing: "+url+" Error: "+e);
         }
-
+        return -1;
     }
 
     public static void main(String[] args) throws RocksDBException{ //FOR TESTING ALREADY CREATED DBs.
@@ -304,15 +331,12 @@ public class Indexer {
         //self.index(url);
 
         byte[] in = self.forwardIndex.get(SerializationUtils.serialize(url.hashCode()));
-        byte[] in2 = self.invertedIndex.get(SerializationUtils.serialize("Hong".hashCode()));
         if(in == null){
             System.out.println("NULL!!!!");
         }
         else {
             HashMap<Integer, ArrayList<Integer>> forward = (HashMap<Integer, ArrayList<Integer>>)SerializationUtils.deserialize(in);
-            HashSet<Integer> inverted = (HashSet<Integer>)SerializationUtils.deserialize(in2);
             System.out.println(forward.get("Hong".hashCode()).get(0));
-            System.out.println("Does hong's ii contain root url? "+inverted.contains(url.hashCode()));
         }
     }
 
