@@ -67,6 +67,14 @@ public class Indexer {
 
     }
 
+    public void finalise() {
+        urlToPageID.finalise();
+        invertedIndex.close();
+        forwardIndex.close();
+        wordIDToWord.close();
+        pageInfo.finalise()
+    }
+
     public PageContent getPageContent(){
         return pageInfo;
     }

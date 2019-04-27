@@ -28,6 +28,10 @@ public class PageContent
         this.db = RocksDB.open(options, dbPath);
     }
 
+    public void finalise(){
+        db.close();
+    }
+
     public void addEntry(int pageID, Page page) throws RocksDBException
     {
         // Add a "docX Y" entry for the key "word" into hashtable
