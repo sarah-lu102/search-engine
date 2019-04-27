@@ -21,21 +21,31 @@
 		<%@page language="java"%>
 		<%@page import="java.util.StringTokenizer"%>
 		<%@page import="java.util.Vector"%>
+		<%@page import="java.util.*"%>
 		<%@page import="java.io.IOException"%>
 		<%@page import="java.util.Map"%>
 		
+		<%@page import="lib.*"%>
+		<%@page import="SE.*"%>
+		
+
+
+		<% Indexer indexer; %>
+
 		<%
 		if(request.getParameter("search_terms")!=null) {
-		
-			
+			indexer = new Indexer();			
 			out.println("<h2> Search Results for query: <b>"+ request.getParameter("search_terms") + "</b></h2>");	
 			out.println("Inputed <br>");
+			indexer.printAll(); //TO TEST that indexer can pull from database file - will replace with stuff to print out
 			StringTokenizer st = new StringTokenizer(request.getParameter("search_terms"));
 			Vector<String> key = new Vector<String>();
 			while(st.hasMoreTokens()) {
 				//out.println(st.nextToken() + "<br>");
 				key.add(st.nextToken());
 			}
+
+			indexer.finalise();
 		} else {
 			out.println("You input nothing");
 		}

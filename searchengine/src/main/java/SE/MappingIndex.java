@@ -33,6 +33,11 @@ public class MappingIndex
 
     }
 
+    public void finalise(){
+        db.close();
+        inverse_db.close();
+    }
+
     public boolean addEntry(String word, int id) throws RocksDBException
     {
         // Add a "docX Y" entry for the key "word" into hashtable
