@@ -1,0 +1,63 @@
+body {
+	
+	background: #7F7FD5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: -webkit-fill-available;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+.searchResultsWrapper{
+	width:100%;
+}
+
+.searchEntry{
+	/*padding: 80px 100px;*/
+	  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  /*/display: flex;*/
+  align-items: center;
+}
+
+.searchResults{
+	padding: 20px 100px;
+}
+
+.search {
+    padding: 6px 6px 6px 8px;
+    border: solid 1px #bcbbbb;
+    border-radius: 2em;
+    box-shadow: 0 1px 0 rgba(255,255,255,.9);
+    transition: all 0.28s ease-in 0s;
+}
+
+img {
+	display: block;
+	margin:auto;
+}
+
+#searchWrap{
+	padding: 10px;
+	position: relative;
+	left: 130px;
+	bottom: 60px;
+}
+
+#searchWrap .btn {
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+}
+
+.glyphicon-search{
+	font-size: 150%;
+	right: 0.5px;
+}
+
+input[type=text] {
+		width: 245px;
+}
