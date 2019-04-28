@@ -74,7 +74,7 @@
 			
 			out.println("<h2 class='query'> Search Results for query: <b>"+ request.getParameter("search_terms") + "</b></h2>");	
 
-			
+
 			se = new Searcher();
 			List<Map.Entry<Integer, Double>> result = se.search(request.getParameter("search_terms"));
 			se.finalise();
@@ -117,8 +117,8 @@
 		            
 		            <h3 class="card-header">
 			            <%
-							out.println("<a href='" + url + "'> " + title + "</a>");
-							out.println("<a href='" + url + "'> (" + url + ")</a><br>");
+							out.println("<a href='" + url + "' target='_blank'> " + title + "</a>");
+							out.println("<a href='" + url + "'  target='_blank'> (" + url + ")</a><br>");
 							
 			            %>
 		            </h3>
@@ -177,11 +177,11 @@
 			            count = 0;
 			            for(String parent : parents){
 			            	if(count < 5){
-			               		out.println("<a href='" + parent+"' class='list-group-item list-group-item-action'>"+parent+"</a>");
+			               		out.println("<a href='" + parent+"' class='list-group-item list-group-item-action'  target='_blank'>"+parent+"</a>");
 	   							
 			            	} else {
 			            	
-			            		out.println("<a href='" + parent+"' class='list-group-item list-group-item-action d-none'>"+parent+"</a>");
+			            		out.println("<a href='" + parent+"' class='list-group-item list-group-item-action d-none'  target='_blank'>"+parent+"</a>");
 			            	}
 			            	count++;	
 
@@ -206,10 +206,10 @@
 	   					count=0;
 			            for(String child : children){
 			            	if(count < 5){
-			            		out.println("<a href='" + child+"' class='list-group-item list-group-item-action'>"+child+"</a>");
+			            		out.println("<a href='" + child+"' class='list-group-item list-group-item-action'  target='_blank'>"+child+"</a>");
 	   								
 			            	} else {
-			            		out.println("<a href='" + child+"' class='list-group-item list-group-item-action d-none'>"+child+"</a>");
+			            		out.println("<a href='" + child+"' class='list-group-item list-group-item-action d-none'  target='_blank'>"+child+"</a>");
 			            	}
 			            	count++;
 			            }

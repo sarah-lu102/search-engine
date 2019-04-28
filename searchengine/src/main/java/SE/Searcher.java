@@ -94,9 +94,7 @@ public class Searcher {
                         scores.put(id, tfidf);
                     }
                 }
-            } else {
-                
-            }
+            } 
         }catch (RocksDBException e){
             System.out.println(e.toString());
         }
@@ -216,9 +214,9 @@ public class Searcher {
             }
 
             return pageCandidates;
-        }catch (RocksDBException e){
+        }catch (Exception e){
             System.out.println(e.toString());
-            return null;
+            return new HashSet<Integer>();
         }
 
     }
