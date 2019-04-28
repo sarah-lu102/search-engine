@@ -17,9 +17,13 @@ import org.apache.commons.lang3.*;
 
 
 public class Searcher {
-    private final String fPath = "/home/sam/search-engine/searchengine/forwardIndex";
-    private final String iPath = "/home/sam/search-engine/searchengine/invertedIndex";
-    private PageContent pageContent = new PageContent("/home/sam/search-engine/searchengine/pageInfo");
+    private final String workingDirectory = System.getProperty("user.dir");
+    private final String fPath = workingDirectory + "/forwardIndex";
+    //private final String fPath = "/home/sam/search-engine/searchengine/forwardIndex";
+    //private final String iPath = "/home/sam/search-engine/searchengine/invertedIndex";
+    private final String iPath = workingDirectory + "/invertedIndex";
+    private final String pPath = workingDirectory + "/pageInfo";
+    private PageContent pageContent;
     StopStem stopStem = new StopStem("stopwords.txt");
     private RocksDB forwardIndex;
     private RocksDB invertedIndex;
@@ -30,8 +34,13 @@ public class Searcher {
         this.options = new Options();
         forwardIndex = RocksDB.open(options, fPath);
         invertedIndex = RocksDB.open(options, iPath);
+        pageContent = new PageContent(pPath);
+    }
 
-
+    public void finalise() {
+        forwardIndex.close();
+        invertedIndex.close();
+        pageContent.finalise();
     }
 
     public List<Map.Entry<Integer, Double>> search(String s) throws RocksDBException{
@@ -70,20 +79,23 @@ public class Searcher {
                 System.out.println("Skipped term that got stemmed to empty");
                 return;
             }
-
-            HashMap<Integer, Double> invertedEntry = (HashMap<Integer, Double>) SerializationUtils.deserialize(invertedIndex.get(SerializationUtils.serialize(term.hashCode())));
-            System.out.println("Size of "+term+"'s invertedentry: "+invertedEntry.size());
-            for (Map.Entry<Integer, Double> page : invertedEntry.entrySet()) {
-                int id = page.getKey();
-                double tfidf = page.getValue();
-                System.out.println(term+"'s tfidf: "+tfidf);
-                if (scores.containsKey(id)) {
-                    double newScore = scores.get(id) + tfidf;
-                    scores.put(id, newScore);
-                } else {
-                    System.out.println("adding score for: "+id);
-                    scores.put(id, tfidf);
+            if(invertedIndex.get(SerializationUtils.serialize(term.hashCode())) != null) {
+                HashMap<Integer, Double> invertedEntry = (HashMap<Integer, Double>) SerializationUtils.deserialize(invertedIndex.get(SerializationUtils.serialize(term.hashCode())));
+                System.out.println("Size of "+term+"'s invertedentry: "+invertedEntry.size());
+                for (Map.Entry<Integer, Double> page : invertedEntry.entrySet()) {
+                    int id = page.getKey();
+                    double tfidf = page.getValue();
+                    System.out.println(term+"'s tfidf: "+tfidf);
+                    if (scores.containsKey(id)) {
+                        double newScore = scores.get(id) + tfidf;
+                        scores.put(id, newScore);
+                    } else {
+                        System.out.println("adding score for: "+id);
+                        scores.put(id, tfidf);
+                    }
                 }
+            } else {
+                
             }
         }catch (RocksDBException e){
             System.out.println(e.toString());

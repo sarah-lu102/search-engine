@@ -29,7 +29,7 @@ public class PageContent
     }
 
     public void finalise(){
-        db.close();
+        this.db.close();
     }
 
     public void addEntry(int pageID, Page page) throws RocksDBException

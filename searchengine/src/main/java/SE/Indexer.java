@@ -340,6 +340,28 @@ public class Indexer {
         }
     }
 
+        // function to sort hashmap by values 
+    public static HashMap<String, Integer> sortByValue(HashMap<String, Integer> hm) 
+    { 
+        // Create a list from elements of HashMap 
+        List<Map.Entry<String, Integer> > list = new LinkedList<Map.Entry<String, Integer> >(hm.entrySet()); 
+  
+        // Sort the list 
+        Collections.sort(list, new Comparator<Map.Entry<String, Integer> >() { 
+            public int compare(Map.Entry<String, Integer> o1,  Map.Entry<String, Integer> o2) 
+            { 
+                return (o2.getValue()).compareTo(o1.getValue());  //COMPARE o2 to o1 to get reverse order
+            } 
+        }); 
+          
+        // put data from sorted list to hashmap  
+        HashMap<String, Integer> temp = new LinkedHashMap<String, Integer>(); 
+        for (Map.Entry<String, Integer> aa : list) { 
+            temp.put(aa.getKey(), aa.getValue()); 
+        } 
+        return temp; 
+    } 
+
     public void printAll() throws RocksDBException
     {
         // Print all the data in the hashtable
