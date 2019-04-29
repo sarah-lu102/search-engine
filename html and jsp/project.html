@@ -47,7 +47,7 @@
 		$(function() {
 
 			$( "#searchWrap" ).submit(function( event ) {
-			  //alert( "Handler2 for .submit() called." );
+			 // alert( "Handler2 for .submit() called." + ajaxFinished);
 			  //debugger;
 			  if(ajaxFinished == 0){
 				event.preventDefault();
@@ -67,11 +67,16 @@
 		<div class = "search-area">
 			
 			<img src="logo.png" height="150">
-	        <form method="post" action="search.jsp" id="searchWrap" class="form" name="inputForm">
+	        <form method="post" id="searchWrap" class="form" name="inputForm">
 	            <div class="formFiled clearfix">
 	                <input type="text" name="search_terms" class="search" placeholder="Search..." onkeyup="space(event)">
-	                <button type="submit" class="btn btn-primary">	
+	                <button type="submit" formaction="search.jsp" class="btn btn-primary rounded-circle">	
  						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</button>
+
+					<button type="submit" formaction="similar.jsp" class="btn btn-primary rounded-pill">	
+ 						<!-- <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
+ 						Get Similar Pages
 					</button>
 	            </div>
 	        </form>
