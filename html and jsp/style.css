@@ -49,7 +49,8 @@ img {
 #searchWrap{
 	padding: 10px;
 	position: relative;
-	left: 130px;
+	/*left: 130px;*/
+	left: 42%;
 	bottom: 60px;
 }
 

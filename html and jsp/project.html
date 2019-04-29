@@ -8,6 +8,58 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+		<script>
+		var request = new XMLHttpRequest();
+		ajaxFinished = 1;
+	
+		function ajaxSearch(){
+			var name=document.inputForm.search_terms.value;
+			var url = "ajaxquery.jsp?val=" + name;
+			
+			try {
+				if(ajaxFinished == 1){
+					ajaxFinished=0;
+                request.onreadystatechange = function () {
+                    if ((request.readyState == 4) && (request.status==200 )) {
+                        var val = request.responseText;
+                        document.getElementById("ajaxResponse").innerHTML = val;
+                        ajaxFinished=1;
+
+                    }
+                }
+                request.open("GET", url, true);
+                request.send();			
+				}
+
+            } catch (e) { 
+            	alert("Unable to connect to server");
+            }
+		}
+		
+		function space(e) {		
+		    if (e.keyCode == 0 || e.keyCode == 32) {// `0` works in mozilla and `32` in other browsers
+		    	ajaxSearch();
+	  	 	}
+		};
+
+		$(function() {
+
+			$( "#searchWrap" ).submit(function( event ) {
+			  //alert( "Handler2 for .submit() called." );
+			  //debugger;
+			  if(ajaxFinished == 0){
+				event.preventDefault();
+				//submit=1;
+			  }
+			  //
+			});
+
+		});
+
+		</script>
+
 	</head> 
 	<body>
 	<div class="container h-100 d-flex d-flex justify-content-center searchEntry">
@@ -15,14 +67,17 @@
 		<div class = "search-area">
 			
 			<img src="logo.png" height="150">
-	        <form method="post" action="search.jsp" id="searchWrap" class="form" name="vinform">
+	        <form method="post" action="search.jsp" id="searchWrap" class="form" name="inputForm">
 	            <div class="formFiled clearfix">
-	                <input type="text" name="search_terms" class="search" placeholder="Search...">
+	                <input type="text" name="search_terms" class="search" placeholder="Search..." onkeyup="space(event)">
 	                <button type="submit" class="btn btn-primary">	
  						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 					</button>
 	            </div>
 	        </form>
+	    </div>
+	    <div id="ajaxResponse" class="d-flex justify-content-center align-items-center">
+	    	
 	    </div>
 	    </div>
 	</div>
