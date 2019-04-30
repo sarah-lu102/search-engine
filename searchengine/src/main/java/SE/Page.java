@@ -35,7 +35,12 @@ public class Page implements Serializable
 
 	public void setMagnitude(double magnitude){ this.magnitude = magnitude; }
 
-	public void setTopKeywords(int[][] topKeywords){ this.top5Keywords = top5Keywords; }
+	public void setTopKeywords(int[][] topKeywords){ this.top5Keywords = topKeywords; }
+
+	public int[][] getTopKeywords(){
+	//	System.out.println(top5Keywords[0][1]);
+		return top5Keywords;
+	}
 
 	public String getModifiedDate(){
 		return lastModifiedDate;

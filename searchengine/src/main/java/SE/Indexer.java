@@ -322,6 +322,7 @@ public class Indexer {
             int pageID = url.hashCode();
             //int pageID = urlToPageID.getSize();
             int[][] top5 = indexWords(url);
+            //System.out.println(top5[0][1]);
             Page thisPage = pageInfo.getPageContent(pageID);
             pageInfo.delEntry(pageID);
             thisPage.setTopKeywords(top5);
@@ -379,12 +380,14 @@ public class Indexer {
                 }
 
                 int count = pair.getValue().size();
+                //System.out.println("count "+count);
                 invertedEntry.put(pageID, (double)count);
                 invertedIndex.put(SerializationUtils.serialize(id), SerializationUtils.serialize(invertedEntry));
 
                 if(count>top5[4][1]){
+                    //System.out.println("replacing: "+top5[4][1]);
                     top5[4][1] = count;
-                    top5[4][1] = id;
+                    top5[4][0] = id;
                     for(int i=3;i>=0;i--){
                         if(count>top5[i][1]){
                             int prevId = top5[i][0];

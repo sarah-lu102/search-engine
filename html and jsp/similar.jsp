@@ -88,8 +88,18 @@
 				PageContent similarPC = indexer.getPageContent();
 				Page similarP = similarPC.getPageContent(similarPageID);
 		        String similarUrl = "[url]";
-		        HashMap<Integer, ArrayList<Integer>> similarWords = null;
+		        int[][] similarTop5Words = null;
+		        //HashMap<Integer, ArrayList<Integer>> similarWords = null;
                 similarUrl = similarP.getURL();
+                similarTop5Words = similarP.getTopKeywords();
+
+        		for(int j=0; j<5;j++){ //top 5 words
+	            	Integer similarWordID = similarTop5Words[j][0];
+	            	Integer similarWordCount = similarTop5Words[j][1];
+	            	//out.println("(" + indexer.getWordfromID(similarWordID) + ", " + similarWordCount+")");
+	            	newString=newString+" " + indexer.getWordfromID(similarWordID);
+	            }
+                /*
                 similarWords = indexer.extractWordIDs(similarUrl);
 
             	Iterator similarIT = similarWords.entrySet().iterator();
@@ -112,6 +122,7 @@
 	            	newString=newString+" " + similarPair.getKey();
 	            	similarCount++;
 	            }
+	            */
 
 	            indexer.finalise();
 	            se = new Searcher();
@@ -136,19 +147,21 @@
 		            String date = "[date]";
 		            int size = -1;
 		            String url = "[url]";
-		            HashMap<Integer, ArrayList<Integer>> words = null;
+		            //HashMap<Integer, ArrayList<Integer>> words = null;
 		            ArrayList<String> children = null;
-		            HashSet<String> parents = null;
+		            ArrayList<String> parents = null;
+		            int[][] top5Words = null;
 
+		            int count = 0;
 		            try{
 		                title = p.getTitle();
 		                date = p.getModifiedDate();
 		                size = p.getPageSize();
 		                url = p.getURL();
-		                words = indexer.extractWordIDs(url);
+		                //words = indexer.extractWordIDs(url);
 		                children = p.getChildLinks();
 		                parents = p.getParentLinks();
-
+ 						top5Words = p.getTopKeywords();
 		            }catch(Exception e){
 		            }
 		            %> 
@@ -174,7 +187,13 @@
 			            <%
 			            
 			            out.println("Words: ");
+			            for(int j=0; j<5;j++){ //top 5 words
+			            	Integer wordID = top5Words[j][0];
+			            	Integer wordCount = top5Words[j][1];
+			            	out.println("(" + indexer.getWordfromID(wordID) + ", " + wordCount+")");
+			            }
 			            //out.println("words: " + words.size());
+			            /*
 		            	Iterator it = words.entrySet().iterator();
 		            	HashMap<String, Integer> wordScores = new HashMap<String, Integer>();
 			            while (it.hasNext()) {
@@ -188,12 +207,13 @@
 
 			            Map<String, Integer> sortedWordScores = indexer.sortByValue(wordScores);
 			            Iterator iWords = sortedWordScores.entrySet().iterator();
-			            int count = 0;
+			            count = 0;
 			            while(iWords.hasNext() && count < 5){
 			            	Map.Entry pair = (Map.Entry) iWords.next();
 			            	out.println("(" + pair.getKey() + ", " + pair.getValue() + ")");
 			            	count++;
 			            } 
+			            */
 			             out.println("</p>");
 			            %>
 			            <ul class="list-group list-group-flush parents">
