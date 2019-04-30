@@ -49,14 +49,16 @@ img {
 #searchWrap{
 	padding: 10px;
 	position: relative;
-	left: 130px;
+	/*left: 130px;*/
+	left: 42%;
 	bottom: 60px;
+	display: inline-block;
 }
 
 #searchWrap .btn {
 	height: 30px;
-	width: 30px;
-	border-radius: 100%;
+	/*width: 30px;*/
+	/*border-radius: 100%;*/
 }
 
 .glyphicon-search{
