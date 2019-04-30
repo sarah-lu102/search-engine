@@ -11,6 +11,8 @@ import java.net.URL;
 import java.util.Date;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
+import static java.util.Comparator.comparing;
+
 
 import org.htmlparser.beans.LinkBean;
 import org.htmlparser.beans.StringBean;
@@ -44,7 +46,7 @@ public class Indexer {
     private MappingIndex urlToPageID;
     private static RocksDB wordIDToWord;
     //private RocksDB forwardIndex;
-    private PageContent pageInfo;
+    public PageContent pageInfo;
     private RocksDB invertedIndex;
     private RocksDB forwardIndex;
 
@@ -91,6 +93,9 @@ public class Indexer {
     }
 
     public static Boolean validURL(String url){
+        if(url.contains("mp4")){
+            return false;
+        }
         String s = getBody(url);
         if(s != null && !s.isEmpty()) return true;
         return false;
@@ -118,8 +123,63 @@ public class Indexer {
 
             //invertedIndex.close();
         } catch (RocksDBException rdbe) {
+            System.out.print("error on reweightt: ");
             rdbe.printStackTrace(System.err);
         }
+    }
+
+    public void updatePageInfo(){
+        try{
+            RocksIterator iter = forwardIndex.newIterator();
+            iter.seekToFirst();
+            while(iter.isValid()){
+                int pageID = (int)SerializationUtils.deserialize(iter.key());
+                HashMap<Integer, ArrayList<Integer>> words = (HashMap<Integer, ArrayList<Integer>>)SerializationUtils.deserialize(iter.value());
+                /*ArrayList<Map.Entry<Integer, ArrayList<Integer>>> entries = new ArrayList<Map.Entry<Integer, ArrayList<Integer>>>(words.entrySet());
+                System.out.println("Starting on pageid "+pageID + "entries size = "+entries.size());
+                Collections.sort(entries, new CompareByLengthOfEntries());
+                int[][] top5 = new int[5][2];
+                for(int i=0;i<Math.min(5, entries.size());i++){
+                    Map.Entry<Integer, ArrayList<Integer>> entry = entries.get(i);
+                    top5[i][0] = entry.getKey();
+                    top5[i][1] = entry.getValue().size();
+                }*/
+
+                double sum = 0.0;
+                for(Integer key : words.keySet()){
+                    HashMap<Integer, Double> pageIdToTf = (HashMap<Integer, Double>)SerializationUtils.deserialize(invertedIndex.get(SerializationUtils.serialize(key)));
+                    Double tfidf = pageIdToTf.get(pageID);
+                    if(tfidf!=null){
+                        sum+=Math.pow((double)tfidf, 2);
+                    }
+                }
+                double magnitude = Math.sqrt(sum);
+                Page thisPage = pageInfo.getPageContent(pageID);
+                String[] titleTerms = thisPage.title.split(" ");
+                StopStem stopStem = new StopStem("stopwords.txt");
+                for(String titleTerm : titleTerms){
+                    if(titleTerm.length()==0 || stopStem.isStopWord(titleTerm)){ continue; }
+                    titleTerm = stopStem.stem(titleTerm);
+                    if(titleTerm.length()>0){
+                        byte[] titleInvertedEntry = invertedIndex.get(SerializationUtils.serialize(titleTerm.hashCode()));
+                        if(titleInvertedEntry==null){
+                            continue;
+                        }
+                        HashMap<Integer, Double> pageIdToTf = (HashMap<Integer, Double>)SerializationUtils.deserialize(titleInvertedEntry);
+                        double titleScore = pageIdToTf.get(pageID);
+
+                        titleScore = titleScore*4;
+                        pageIdToTf.put(pageID, titleScore);
+                    }
+                }
+
+                thisPage.setMagnitude(magnitude);
+                //thisPage.setTopKeywords(top5);
+                pageInfo.delEntry(pageID);
+                pageInfo.addEntry(pageID, thisPage);
+                iter.next();
+            }
+        }catch(Exception e){ System.out.println("updatePageInfo exception" + e.toString());}
     }
 
     public HashMap<Integer, ArrayList<Integer>> extractWordIDs(String url) throws ParserException
@@ -226,7 +286,7 @@ public class Indexer {
 
             String input = "";
             String temp = "";
-            while((input = b.readLine())!=null) 
+            while((input = b.readLine())!=null)
                 temp += input;
 
             b.close();
@@ -261,11 +321,21 @@ public class Indexer {
         try{
             int pageID = url.hashCode();
             //int pageID = urlToPageID.getSize();
-            int tfmax = indexWords(url);
-            if(urlToPageID.addEntry(url, pageID)){ //if new then need to store rest of infomation
+            int[][] top5 = indexWords(url);
+            Page thisPage = pageInfo.getPageContent(pageID);
+            pageInfo.delEntry(pageID);
+            thisPage.setTopKeywords(top5);
+            thisPage.tfmax = top5[0][1];
+            thisPage.title = getTitle(url);
+            thisPage.size = getPageSize(url);
+            thisPage.lastModifiedDate = getDate(url);
+            pageInfo.addEntry(pageID, thisPage);
+
+           /* if(urlToPageID.addEntry(url, pageID)){ //if new then need to store rest of infomation
                 //pageIDs++;
                 Page new_page;
-                new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url), tfmax);
+                new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url), top5[0][1]);
+                new_page.setTopKeywords(top5);
                 pageInfo.addEntry(pageID, new_page);
             } else { //if false then need to check date
                 Page curr_page = pageInfo.getPageContent(pageID);
@@ -278,24 +348,27 @@ public class Indexer {
                     System.out.println("Updating Page");
                     pageInfo.delEntry(pageID);
                     Page new_page;
-                    new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url), tfmax);
+                    new_page =  new Page(getTitle(url), url, getDate(url), getPageSize(url), extractLinks(url), top5[0][1]);
+                    new_page.setTopKeywords(top5);
                     pageInfo.addEntry(pageID, new_page);
                 }
-            }
+            }*/
         } catch (Exception e){
             System.out.println("Exception Caught");
         }
 
     }
 
-    public int indexWords(String url){
+    public int[][] indexWords(String url){
         int pageID = url.hashCode();
 
         try{
             HashMap<Integer, ArrayList<Integer>> words = extractWordIDs(url);
             forwardIndex.put(SerializationUtils.serialize(pageID), SerializationUtils.serialize(words));
 
-            int maxTf = 0;
+            int [][] top5 = new int[5][2];
+
+
             for(Map.Entry<Integer, ArrayList<Integer>> pair : words.entrySet()) {
                 int id = pair.getKey();
 
@@ -309,12 +382,26 @@ public class Indexer {
                 invertedEntry.put(pageID, (double)count);
                 invertedIndex.put(SerializationUtils.serialize(id), SerializationUtils.serialize(invertedEntry));
 
-                if(count>maxTf){
-                    maxTf = count;
+                if(count>top5[4][1]){
+                    top5[4][1] = count;
+                    top5[4][1] = id;
+                    for(int i=3;i>=0;i--){
+                        if(count>top5[i][1]){
+                            int prevId = top5[i][0];
+                            int prevCount = top5[i][1];
+                            top5[i][1] = count;
+                            top5[i][0] = id;
+                            top5[i+1][1]=prevCount;
+                            top5[i+1][0]=prevId;
+                        }
+                        else{
+                            break;
+                        }
+                    }
                 }
             }
 
-            return maxTf;
+            return top5;
 
 
         }catch(ParserException e){
@@ -322,7 +409,7 @@ public class Indexer {
         }catch(RocksDBException e){
             System.out.print("RocksDBException while indexing: "+url+" Error: "+e);
         }
-        return -1;
+        return new int[5][2];
     }
 
     public static void main(String[] args) throws RocksDBException{ //FOR TESTING ALREADY CREATED DBs.
@@ -360,7 +447,8 @@ public class Indexer {
             temp.put(aa.getKey(), aa.getValue()); 
         } 
         return temp; 
-    } 
+    }
+
 
     public void printAll() throws RocksDBException
     {

@@ -14,8 +14,9 @@ public class Page implements Serializable
 	int size;
 	int tfmax;
 	double magnitude;
+	int[][] top5Keywords;
 	ArrayList<String> childLinks;
-	HashSet<String> parentLinks;
+	ArrayList<String> parentLinks;
 	
 	public Page(String title, String url, String lastModifiedDate, int size, ArrayList<String> childLinks, int tfmax)
 	{
@@ -27,7 +28,14 @@ public class Page implements Serializable
 		this.tfmax = tfmax;
 	}
 
+	public Page(String url, ArrayList<String> parentLinks){
+		this.url = url;
+		this.parentLinks = parentLinks;
+	}
+
 	public void setMagnitude(double magnitude){ this.magnitude = magnitude; }
+
+	public void setTopKeywords(int[][] topKeywords){ this.top5Keywords = top5Keywords; }
 
 	public String getModifiedDate(){
 		return lastModifiedDate;
@@ -57,11 +65,11 @@ public class Page implements Serializable
 		return childLinks;
 	}
 
-	public void setParents(HashSet<String> parents){
+	public void setParents(ArrayList<String> parents){
 		parentLinks = parents;
 	}
 
-	public HashSet<String> getParentLinks(){
+	public ArrayList<String> getParentLinks(){
 		return parentLinks;
 	}
 }

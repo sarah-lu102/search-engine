@@ -29,25 +29,28 @@ import SE.Indexer;
 
 public class Crawler {
     private Options options;
-    private static Indexer indexer;
-    // Queue for BFS
-    // URLs already visited
-    static Set<String> marked = new HashSet<>();
-    private static HashMap<String, HashSet<String>> parents = new HashMap<>();
-
-    // URL Pattern regex
+    private Indexer indexer;
 
     // Start from here
     static String root = "http://www.cse.ust.hk";
 
+    public Crawler(){
+        try {
+            this.indexer = new Indexer();
+        } catch (RocksDBException e) {
+            System.out.println(e.getStackTrace());
+        }
+    }
+
     // BFS Routine
-    public static void bfs() throws IOException, RocksDBException {
+    public void bfs() throws IOException, RocksDBException {
         Queue<String> urlQ = new LinkedList<>();
+        Set<Integer> marked = new HashSet<>();
         urlQ.add(root);
-        marked.add(root);
-        HashSet<String> rootParent = new HashSet<>();
-        rootParent.add("root URL - no parents.");
-        parents.put(root, rootParent);
+        marked.add(root.hashCode());
+        ArrayList<String> rootParent = new ArrayList<>();
+        Page rootPage = new Page(root, rootParent);
+        indexer.pageInfo.addEntry(root.hashCode(), rootPage);
 
         int count = 1;
 
@@ -58,40 +61,49 @@ public class Crawler {
 
             try {
                 ArrayList<String> children = Indexer.extractLinks(currentURL);
+                {
+                    Page currentPage = indexer.pageInfo.getPageContent(currentURL.hashCode());
+                    indexer.pageInfo.delEntry(currentURL.hashCode());
+                    currentPage.childLinks = children;
+                    indexer.pageInfo.addEntry(currentURL.hashCode(), currentPage);
+                }
 
                 for (String child : children) {
-
-                    if(marked.contains(child)){
+                    int childHash = child.hashCode();
+                    if(marked.contains(childHash)){
                         //add to its parent list
-                        if(parents.containsKey(child)){
-                            parents.get(child).add(currentURL);
-                        }
-                        else{
-                            HashSet<String> parentList = new HashSet<>();
-                            parentList.add(currentURL);
-                            parents.put(child, parentList);
-                        }
+                        Page childPage = indexer.pageInfo.getPageContent(childHash);
+                        indexer.pageInfo.delEntry(childHash);
+                        childPage.parentLinks.add(currentURL);
+                        indexer.pageInfo.addEntry(childHash, childPage);
                     }
-                    if (count < 30 && indexer.validURL(currentURL) && !marked.contains(child)) {
+                    else if (count < 30 && indexer.validURL(currentURL)) {
+                        if(count%100==0)
+                            System.out.print(count);
                         count++;
                         urlQ.add(child);
-                        marked.add(child);
+                        marked.add(childHash);
                         //create a parent list
-                        HashSet<String> parentList = new HashSet<>();
+                        ArrayList<String> parentList = new ArrayList<>();
                         parentList.add(currentURL);
-                        parents.put(child, parentList);
+                        Page newPage = new Page(child, parentList);
+                        indexer.pageInfo.delEntry(childHash);
+                        indexer.pageInfo.addEntry(childHash, newPage);
                     }
-                }
-            }catch(ParserException e){
-                System.out.println("Parser exception: "+e);
-            }
 
+                }
+                if(count>=30 && urlQ.size()%100==0){
+                    System.out.println(urlQ.size()+" left to index");
+                }
+            }catch(ParserException e) {
+                System.out.println("Parser exception: " + e);
+            }
             indexer.index(currentURL);
         }
     }
     
     //Display results from SET marked
-    public static void displayResults(){
+    /*public static void displayResults(){
         System.out.println("\n\nResults: ");
         System.out.println("\nWeb sites crawled : "+marked.size()+"\n");
         for(String s:marked){
@@ -99,26 +111,9 @@ public class Crawler {
             System.out.println ("page size: " + indexer.getPageSize(s));
             System.out.println(indexer.getBody(s) + "\n");
         }
-    }
+    }*/
 
-    public static void addParents(){
-        for(String url: marked){
-            try {
-                // indexer.getPageContent().getPageContent(url.hashCode()).setParents(parents.get(url));
-                // HashSet<String> result = indexer.getPageContent().getPageContent(url.hashCode()).getParentLinks();
-                // System.out.println("parent links: " + result.size());
-                Page p = indexer.getPageContent().getPageContent(url.hashCode());
-                p.setParents(parents.get(url));
-                indexer.getPageContent().updateEntry(url.hashCode(), p);
-                HashSet<String> result = indexer.getPageContent().getPageContent(url.hashCode()).getParentLinks();
-                System.out.println("parent links: " + result.size());                
-            } catch (RocksDBException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public static void printParents(){
+    /*public static void printParents(){
         for(String url:marked){
             try {
                 System.out.println("url: " + url);
@@ -131,25 +126,25 @@ public class Crawler {
                 //TODO: handle exception
             }
         }
-    }
+    }*/
     
     //Run
     public static void main(String[] args) throws RocksDBException{
         // a static method that loads the RocksDB C++ library.
         RocksDB.loadLibrary();
-        
-        try {
-            indexer = new Indexer();
-        } catch (RocksDBException e) {
-               System.out.println(e.getStackTrace());
-        }
+        Crawler crawl = new Crawler();
+
+
+
 
         try{
-            bfs();
-            indexer.reweight(30);
-            addParents();
+            crawl.bfs();
+            System.out.println("Reweighing: ");
+            crawl.indexer.reweight(2000);
+            System.out.print("Done reweighting");
+            crawl.indexer.updatePageInfo();
             //printParents();
-            indexer.printAll();
+            //indexer.printAll();
 
         }catch(IOException e){
             System.out.println("IOException caught : "+e);

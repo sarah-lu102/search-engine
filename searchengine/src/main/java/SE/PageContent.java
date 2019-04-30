@@ -39,13 +39,13 @@ public class PageContent
     byte[] data = SerializationUtils.serialize(page); //Seralize
 //YourObject yourObject = SerializationUtils.deserialize(data) //DeSeralize
 //System.out.println(data);
-            byte[] content = db.get(Integer.toString(pageID).getBytes());
+     /*       byte[] content = db.get(Integer.toString(pageID).getBytes());
         if (content == null) {
             content = data;
         } else {
             //content = (new String(content) + " doc 1").getBytes();
             System.out.println("Already Done Page " + pageID);
-        }
+        }*/
     // byte[] content;
     // try{
     //     content =db.get(Integer.toString(pageID).getBytes())) ;
@@ -65,13 +65,13 @@ public class PageContent
             
             //content = (new String(content) + " doc 1").getBytes();
         //}
-        db.put(Integer.toString(pageID).getBytes(), content);
+        db.put(Integer.toString(pageID).getBytes(), data);
     }
     public void delEntry(int pageID) throws RocksDBException
     {
         // Delete the word and its list from the hashtable
         // ADD YOUR CODES HERE
-        db.remove(Integer.toString(pageID).getBytes());
+        db.delete(Integer.toString(pageID).getBytes());
     } 
 
     public void updateEntry(int pageID, Page p) throws RocksDBException{

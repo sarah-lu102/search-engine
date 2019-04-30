@@ -53,7 +53,16 @@ public class Searcher {
             else
                 quotesSearch(term, pageIdToScore);
         }
+
+        double queryMagnitude = Math.sqrt(terms.size());
         ArrayList<Map.Entry<Integer, Double>> entries = new ArrayList<Map.Entry<Integer, Double>>(pageIdToScore.entrySet());
+        for(Map.Entry<Integer, Double> entry : entries){
+            Page thisPage = pageContent.getPageContent(entry.getKey());
+            double score = entry.getValue();
+            score = score/(thisPage.magnitude*queryMagnitude);
+            entry.setValue(score);
+        }
+
         Collections.sort(entries, new MyMapComparator());
 
 
@@ -121,7 +130,7 @@ public class Searcher {
             }
 
             Set<Integer> pageCandidates = getPageCandidates(stemmedTerms);
-            System.out.println("For term: "+term + " "+pageCandidates.size() +  " page candidates were found"+" search will begin at "+firstRealWord+"'th term");
+            //System.out.println("For term: "+term + " "+pageCandidates.size() +  " page candidates were found"+" search will begin at "+firstRealWord+"'th term");
             HashMap<Integer, Integer> pageIdToTf = new HashMap<>();
             for (Integer pageId : pageCandidates) {
                 ArrayList<ArrayList<Integer>> termIndexes = new ArrayList<ArrayList<Integer>>();
@@ -129,11 +138,11 @@ public class Searcher {
                 int[] minIndex = new int[terms.length];
                 for (int i = 0; i < terms.length; i++) {
                     termIndexes.add(terms[i].length() != 0 ? pageTerms.get(terms[i].hashCode()) : new ArrayList<Integer>());
-                    System.out.println("TermIndexes["+i+"] = "+termIndexes.get(i));
+                    //System.out.println("TermIndexes["+i+"] = "+termIndexes.get(i));
                 }
 
                 for (int i = firstRealWord; i < termIndexes.get(firstRealWord).size(); i++) {
-                    System.out.println("Starting from i = "+i +" going to "+termIndexes.get(firstRealWord).size());
+                    //System.out.println("Starting from i = "+i +" going to "+termIndexes.get(firstRealWord).size());
                     int startingIndex = termIndexes.get(firstRealWord).get(i);
                     //
                     boolean candidate = true;
@@ -145,8 +154,8 @@ public class Searcher {
                             continue;
                         }
                         for (int k = minIndex[j]; k < indexes.size(); k++) {
-                            System.out.println("Starting from "+j+"'s min index of "+minIndex[j]+" a word index of "+startingIndex+" will be searched for in:");
-                            System.out.println(indexes);
+                            //System.out.println("Starting from "+j+"'s min index of "+minIndex[j]+" a word index of "+startingIndex+" will be searched for in:");
+                            //System.out.println(indexes);
                             if (indexes.get(k) <= startingIndex) {
                                 minIndex[j]++;
                             } else if (indexes.get(k) == startingIndex + 1) {
@@ -179,7 +188,7 @@ public class Searcher {
                 Page pageInfo = pageContent.getPageContent(pageId);
                 double tfmax = (double)pageInfo.tfmax;
 
-                double tfidf = ((double)tf)*Math.log(30.0/((double)pageIdToTf.size()))/Math.log(2)/tfmax; //Change 30 to # of docs indexed
+                double tfidf = ((double)tf)*Math.log(5000.0/((double)pageIdToTf.size()))/Math.log(2)/tfmax; //Change 30 to # of docs indexed
 
                 if (scores.containsKey(pageId)) {
                     double newScore = scores.get(pageId) + tfidf;
